@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
 
-[ext_resource type="Script" uid="uid://cp1k1fihopr0p" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Script" uid="uid://bgm4p8kb0ifua" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -13,9 +13,8 @@ height = 1.8
 radius = 0.4
 height = 1.8
 
-[node name="ProtoController" type="CharacterBody3D" unique_id=1160939850]
+[node name="ProtoController" type="CharacterBody3D" unique_id=1309357448]
 script = ExtResource("1_ucva2")
-can_sprint = true
 input_left = "moveLeft"
 input_right = "moveRight"
 input_forward = "moveUp"
@@ -23,17 +22,17 @@ input_back = "moveDown"
 input_jump = "jump"
 input_sprint = "Sprint"
 
-[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1064336867]
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1834148359]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 material_override = SubResource("StandardMaterial3D_iof21")
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
 
-[node name="Collider" type="CollisionShape3D" parent="." unique_id=1433687260]
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=1447496372]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
-[node name="Head" type="Node3D" parent="." unique_id=1860269661]
+[node name="Head" type="Node3D" parent="." unique_id=1917291852]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Head" unique_id=286009418]
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=649497887]
