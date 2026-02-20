@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dj52y00r1k881"]
+
+[ext_resource type="Script" uid="uid://bx5l3cg8s8il3" path="res://Pathfinding/standard_path_finding.gd" id="1_obhcw"]
+
+[node name="StandardPathFinding" type="PathFollow3D" unique_id=181767738]
+script = ExtResource("1_obhcw")

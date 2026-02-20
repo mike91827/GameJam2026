@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dvllbfk8p0wic"]
+
+[ext_resource type="Texture2D" uid="uid://q2a5yhsmksrk" path="res://MichaelPNG/sprite_0.png" id="1_hq2u2"]
+
+[node name="Goblin1" type="Sprite3D" unique_id=114918587]
+billboard = 1
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("1_hq2u2")
+hframes = 3
+vframes = 3
+frame = 7

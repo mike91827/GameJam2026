@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1r585mxa83js"]
+
+[ext_resource type="PackedScene" uid="uid://dvllbfk8p0wic" path="res://Characters/Goblin1.tscn" id="1_h3w1t"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d1brp"]
+radius = 1.480957
+height = 3.3381348
+
+[node name="ActualGoblin1" type="Node3D" unique_id=1984411180]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=312172092 groups=["Pickable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=2088690966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21927357, 0.31481934, 0)
+shape = SubResource("CapsuleShape3D_d1brp")
+
+[node name="Goblin1" parent="RigidBody3D" unique_id=114918587 instance=ExtResource("1_h3w1t")]
