@@ -8,7 +8,7 @@
 albedo_texture = ExtResource("1_o5qli")
 uv1_scale = Vector3(5, 5, 5)
 
-[node name="Main" type="Node3D"]
+[node name="Main" type="Node3D" unique_id=1925729651]
 
 [node name="Floor" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
