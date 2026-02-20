@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8mysjo8080rj"
-path.s3tc="res://.godot/imported/tree1.png-1e3faf9e6f29f6130483ec280db52e2e.s3tc.ctex"
+path="res://.godot/imported/tree1.png-1e3faf9e6f29f6130483ec280db52e2e.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/sprites/tree1.png"
-dest_files=["res://.godot/imported/tree1.png-1e3faf9e6f29f6130483ec280db52e2e.s3tc.ctex"]
+dest_files=["res://.godot/imported/tree1.png-1e3faf9e6f29f6130483ec280db52e2e.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
