@@ -1,8 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cvcntrs6w0vc5"]
 
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://assets/brackeys-proto-controller/proto_controller/proto_controller.tscn" id="2_0wfyh"]
-[ext_resource type="Texture2D" uid="uid://c8mysjo8080rj" path="res://assets/sprites/tree1.png" id="3_tiqsp"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0wfyh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wfyh"]
 albedo_texture = ExtResource("1_o5qli")
@@ -10,7 +9,7 @@ uv1_scale = Vector3(5, 5, 5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0wfyh"]
 
-[node name="Main" type="Node3D" unique_id=1925729651]
+[node name="Main" type="Node3D"]
 
 [node name="Floor" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
@@ -18,16 +17,16 @@ use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0wfyh")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1333912194]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9792993, 0)
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9793, 0)
 
-[node name="ProtoController" parent="." unique_id=1696003242 instance=ExtResource("2_0wfyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.424839, 0)
+[node name="ProtoController" parent="." instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4248, 0)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1554889865 groups=["Pickable"]]
+[node name="RigidBody3D" type="RigidBody3D" parent="." groups=["Pickable"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, -21)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1711350310]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
 shape = SubResource("BoxShape3D_0wfyh")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=934449234]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
