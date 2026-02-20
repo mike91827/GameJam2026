@@ -9,9 +9,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	$"../Label3D".visible = false
 	var object = raycast.get_collider()
 	if raycast.is_colliding():		
 		if object.is_in_group("Pickable"):
+			$"../Label3D".visible = true
 			if Input.is_action_pressed("Interact"):
 				objectInHand = object
 				#object.global_position = hand.global_position
