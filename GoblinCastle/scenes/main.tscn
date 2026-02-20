@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cvcntrs6w0vc5"]
+[gd_scene load_steps=3 format=3 uid="uid://cvcntrs6w0vc5"]
 
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
 
@@ -6,9 +6,11 @@
 albedo_texture = ExtResource("1_o5qli")
 uv1_scale = Vector3(5, 5, 5)
 
-[node name="Main" type="Node3D" unique_id=860899185]
+[node name="Main" type="Node3D"]
 
-[node name="Floor" type="CSGBox3D" parent="." unique_id=575991149]
+[node name="Floor" type="CSGBox3D" parent="."]
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0wfyh")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
