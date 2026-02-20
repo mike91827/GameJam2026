@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cnu5ecyy5utqh"]
+
+[ext_resource type="Texture2D" uid="uid://c8mysjo8080rj" path="res://assets/sprites/tree1.png" id="1_ge16g"]
+
+[node name="TreeNode" type="Node3D"]
+
+[node name="Tree1" type="Sprite3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 10)
+billboard = 1
+shaded = true
+texture_filter = 0
+texture = ExtResource("1_ge16g")
+
+[node name="TreeLight" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.6386, 20.6608)
+visible = false
+light_color = Color(0.86, 0.86, 0.86, 1)

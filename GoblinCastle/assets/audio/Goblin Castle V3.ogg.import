@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsackrl5erh2b"
+path="res://.godot/imported/Goblin Castle V3.ogg-df34437467ff9efcc73802219cefe247.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Goblin Castle V3.ogg"
+dest_files=["res://.godot/imported/Goblin Castle V3.ogg-df34437467ff9efcc73802219cefe247.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
