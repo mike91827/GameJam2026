@@ -20,8 +20,10 @@ func _on_area_3d_area_entered(area: Area3D) -> void:
 	if area.is_in_group("FireStaff"):
 		area.get_parent().queue_free()
 		Global.hasTreasures[0]= true
-
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	print("fire")
-	if body.is_in_group("FireStaff"):
-		body.queue_free()
+	if area.is_in_group("Dagger"):
+		area.get_parent().queue_free()
+		Global.hasTreasures[1]= true
+	if area.is_in_group("Shield"):
+		area.get_parent().queue_free()
+		Global.hasTreasures[2]= true
+		

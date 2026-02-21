@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://doi6jh3657hw"]
+
+[ext_resource type="Texture2D" uid="uid://c807rimwnlmn5" path="res://assets/sprites/sprite_shield.png" id="1_dg7sk"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y2ck0"]
+radius = 0.2148566
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ijdgo"]
+radius = 0.06576222
+
+[node name="Sheild" type="Node3D" unique_id=318047231]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1710295846 groups=["Pickable"]]
+
+[node name="Sprite3D" type="Sprite3D" parent="Area3D" unique_id=1165168631]
+texture = ExtResource("1_dg7sk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=886300542]
+shape = SubResource("SphereShape3D_y2ck0")
+
+[node name="Area3D2" type="Area3D" parent="Area3D" unique_id=305338233 groups=["Shield"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D/Area3D2" unique_id=77831756]
+shape = SubResource("SphereShape3D_ijdgo")

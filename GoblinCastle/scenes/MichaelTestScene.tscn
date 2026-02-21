@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="6_ukqbf"]
 [ext_resource type="PackedScene" uid="uid://b81e8wqoqyn5t" path="res://Puzzle/AlterPuzzle/TreasuresOnAlter.tscn" id="7_ay4mc"]
 [ext_resource type="PackedScene" uid="uid://dwio36efih3q1" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="8_ee46y"]
+[ext_resource type="PackedScene" uid="uid://btwcaa581gtxn" path="res://Puzzle/PicturePuzzle/Dagger.tscn" id="9_r8v1g"]
+[ext_resource type="PackedScene" uid="uid://doi6jh3657hw" path="res://Puzzle/Shield/Sheild.tscn" id="10_5vgek"]
+[ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="10_uxu40"]
 
 [node name="MichaelTestScene" type="Node3D" unique_id=1845220353]
 
@@ -34,3 +37,12 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 115, 16, 166)
 
 [node name="TreasuresOnAlter" parent="." unique_id=661144689 instance=ExtResource("7_ay4mc")]
 transform = Transform3D(37, 0, 0, 0, 37, 0, 0, 0, 37, 110, 15, 97)
+
+[node name="Dagger" parent="." unique_id=166409536 instance=ExtResource("9_r8v1g")]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 125, 12, 190)
+
+[node name="Sheild" parent="." unique_id=318047231 instance=ExtResource("10_5vgek")]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 163, 10, 97)
+
+[node name="BadFireplace" parent="." unique_id=550767037 instance=ExtResource("10_uxu40")]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 98, 14, 155)
