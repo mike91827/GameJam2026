@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://jlxdbvr1dvst"]
+
+[ext_resource type="Texture2D" uid="uid://dpilrscq44ebn" path="res://assets/sprites/sprite_firestaff.png" id="1_s48sf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s48sf"]
+
+[node name="Area3D" type="Area3D" groups=["Pickable"]]
+
+[node name="FireStaff" type="Sprite3D" parent="."]
+transform = Transform3D(-2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
+flip_h = true
+billboard = 1
+texture_filter = 0
+texture = ExtResource("1_s48sf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_s48sf")

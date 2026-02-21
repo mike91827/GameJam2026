@@ -40,7 +40,7 @@ point_count = 10
 [node name="Main" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 350, 440)
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, -0.056568146, 350.18005, 440.09955)
 light_color = Color(0.6888, 0.73415995, 0.84, 1)
 shadow_enabled = true
 directional_shadow_max_distance = 1.0
@@ -52,7 +52,7 @@ environment = SubResource("Environment_choun")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.126832, 4.894755, 0)
 
 [node name="Floor" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94914186, 0.18006516, -0.39958242)
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0wfyh")
@@ -60,7 +60,7 @@ material = SubResource("StandardMaterial3D_0wfyh")
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9793, 0)
 
-[node name="ProtoController" parent="." node_paths=PackedStringArray("puzzle_manager") instance=ExtResource("2_0wfyh")]
+[node name="ProtoController" parent="." instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4248, 0)
 puzzle_manager = NodePath("../PuzzleManager")
 
@@ -73,7 +73,7 @@ shape = SubResource("BoxShape3D_0wfyh")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
 
 [node name="BadFireplace" parent="." instance=ExtResource("3_tbgi4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 3.1110115)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 7.864887)
 
 [node name="Path3D" type="Path3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.065119, 5.3374624, -4.034891)
