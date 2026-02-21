@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
+[gd_scene load_steps=6 format=3 uid="uid://bs72ogkvdd7d6"]
 
 [ext_resource type="Script" uid="uid://bgm4p8kb0ifua" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="Script" uid="uid://chlt3sja6e4lh" path="res://addons/proto_controller/head.gd" id="2_wr06p"]
@@ -14,7 +14,7 @@ height = 1.8
 radius = 0.4
 height = 1.8
 
-[node name="ProtoController" type="CharacterBody3D" unique_id=306508080]
+[node name="ProtoController" type="CharacterBody3D"]
 script = ExtResource("1_ucva2")
 can_sprint = true
 input_left = "moveLeft"
@@ -24,35 +24,35 @@ input_back = "moveDown"
 input_jump = "jump"
 input_sprint = "Sprint"
 
-[node name="Mesh" type="MeshInstance3D" parent="." unique_id=317750417]
+[node name="Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 material_override = SubResource("StandardMaterial3D_iof21")
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
 
-[node name="Collider" type="CollisionShape3D" parent="." unique_id=199882663]
+[node name="Collider" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
-[node name="Head" type="Node3D" parent="." unique_id=1029484793]
+[node name="Head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 script = ExtResource("2_wr06p")
 
-[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1809229309]
+[node name="Camera3D" type="Camera3D" parent="Head"]
 
-[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=1157659380]
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D"]
 target_position = Vector3(0, 0, -4)
 collision_mask = 3
 
-[node name="Hand" type="Node3D" parent="Head" unique_id=1367260212]
+[node name="Hand" type="Node3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5256441, 0, -1.9530975)
 
-[node name="Label3D" type="Label3D" parent="." unique_id=1681201748]
+[node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.618304, -1.149249)
 visible = false
 text = "Press To Pick Up"
 
-[node name="GoingToDie" type="Label3D" parent="." unique_id=1278652770]
+[node name="GoingToDie" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5024354, -1.6638756)
 visible = false
 modulate = Color(1, 0.12941177, 0, 1)

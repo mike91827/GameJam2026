@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://gk4oouwisi40"]
+
+[ext_resource type="Texture2D" uid="uid://gwpm3526kosv" path="res://MichaelPNG/dragonPicture.png" id="1_acw05"]
+
+[node name="DragonPicture" type="Node3D" unique_id=1391384337]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1585543651]
+texture = ExtResource("1_acw05")

@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cinelqrbrvch1"
-path.s3tc="res://.godot/imported/Tile_13-256x256.png-a08c41d281469b11e6e7338a7964df2b.s3tc.ctex"
+uid="uid://gwpm3526kosv"
+path="res://.godot/imported/dragonPicture.png-82dcad3ce30899a812eee156c576a7d8.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/Tile_13-256x256.png"
-dest_files=["res://.godot/imported/Tile_13-256x256.png-a08c41d281469b11e6e7338a7964df2b.s3tc.ctex"]
+source_file="res://MichaelPNG/dragonPicture.png"
+dest_files=["res://.godot/imported/dragonPicture.png-82dcad3ce30899a812eee156c576a7d8.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

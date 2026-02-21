@@ -2,6 +2,7 @@ extends Node3D
 @onready var raycast = $Camera3D/RayCast3D
 @onready var hand  = $Hand
 @onready var objectInHand = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -35,5 +36,10 @@ func _process(delta: float) -> void:
 		$"../GoingToDie".text = str(Global.GTDCounter) +"!"
 	else:
 		$"../GoingToDie".visible = false
+	
+	if Global.fakeDeath && Global.GTDCounter <= 0:
+		$"../GoingToDie".visible = false
+		get_parent().puzzle_manager.fireplace_puzzle_solved.emit()
+
 
 	

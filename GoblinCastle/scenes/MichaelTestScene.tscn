@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d4k11k0b85t74"]
+
+[ext_resource type="PackedScene" uid="uid://dc5a7p0mtp1v1" path="res://Puzzle/PicturePuzzle/GhostPicture.tscn" id="1_h0bd4"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_neqop"]
+[ext_resource type="PackedScene" path="res://scenes/Castle.tscn" id="2_h0bd4"]
+[ext_resource type="PackedScene" uid="uid://bje3ik23qe8tv" path="res://Puzzle/PicturePuzzle/CrazedGoblinPicture.tscn" id="4_i6rus"]
+[ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="5_17xoa"]
+[ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="6_ukqbf"]
+
+[node name="MichaelTestScene" type="Node3D" unique_id=1845220353]
+
+[node name="ProtoController" parent="." unique_id=306508080 instance=ExtResource("1_neqop")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194.00511, 100.81718, 166.69211)
+
+[node name="Castle" parent="." unique_id=1092419099 instance=ExtResource("2_h0bd4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.037735, 0, 0)
+
+[node name="GhostPicture" parent="." unique_id=1556563439 instance=ExtResource("1_h0bd4")]
+transform = Transform3D(98, 0, 0, 0, 98, 0, 0, 0, 98, 243.456, 9.748955, 85.70192)
+
+[node name="CrazedGoblinPicture" parent="." unique_id=306593314 instance=ExtResource("4_i6rus")]
+transform = Transform3D(-0.4443557, 0, 8.989022, 0, 8.999998, 0, -8.989022, 0, -0.4443557, 265.1881, 25.833275, 14.252899)
+
+[node name="DragonPicture" parent="." unique_id=1391384337 instance=ExtResource("5_17xoa")]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 225, 34, 0)
+
+[node name="GoblinSquattingPicture" parent="." unique_id=1270292460 instance=ExtResource("6_ukqbf")]
+transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 179, 18, 113)
