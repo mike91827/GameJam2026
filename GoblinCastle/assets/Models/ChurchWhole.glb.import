@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cvekytm5bjckp"
-path="res://.godot/imported/ChurchRoof.glb-d9142f78c07fbdcbd1d96971726376ba.scn"
+uid="uid://dj4jigp8qyv6s"
+path="res://.godot/imported/ChurchWhole.glb-314f5c91e66e778498d16e6d4c0b24af.scn"
 
 [deps]
 
-source_file="res://assets/Models/ChurchRoof.glb"
-dest_files=["res://.godot/imported/ChurchRoof.glb-d9142f78c07fbdcbd1d96971726376ba.scn"]
+source_file="res://assets/Models/ChurchWhole.glb"
+dest_files=["res://.godot/imported/ChurchWhole.glb-314f5c91e66e778498d16e6d4c0b24af.scn"]
 
 [params]
 
