@@ -1,7 +1,6 @@
-[gd_scene format=3 uid="uid://bk1cykb3ewcoq"]
+[gd_scene load_steps=11 format=3 uid="uid://dreo2nv47ka8d"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
-[ext_resource type="PackedScene" uid="uid://ctn868y2qb6g1" path="res://scenes/Castle.tscn" id="4_640p3"]
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="4_btng2"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
 [ext_resource type="PackedScene" uid="uid://cralbkilrt1ek" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
@@ -44,9 +43,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0eh0j")
-
-[node name="Castle" parent="." instance=ExtResource("4_640p3")]
-transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.12, 1.7770844, 1.6745119, -56.916397)
 
 [node name="FireplacePuzzle" parent="." instance=ExtResource("5_il6em")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -57.61795, 3.7245064, -4.3816605)

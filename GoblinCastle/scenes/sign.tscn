@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2ptnd2b6hh66"]
+
+[ext_resource type="Texture2D" uid="uid://c5ovpv6b12ejy" path="res://assets/sprites/sprite_sign.png" id="1_shbub"]
+
+[node name="Sign" type="Sprite3D"]
+texture_filter = 0
+texture = ExtResource("1_shbub")
