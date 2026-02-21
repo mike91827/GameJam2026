@@ -9,6 +9,10 @@ size = Vector3(2.5885315, 1.5908737, 1.1520996)
 [node name="BadFireplace" type="Node3D" unique_id=203093352]
 script = ExtResource("1_fvojy")
 
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=727781577]
+omni_range = 4.0
+omni_attenuation = 2.0
+
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=900094564]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
 texture = ExtResource("1_1ag43")
