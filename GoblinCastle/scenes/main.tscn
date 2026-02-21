@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://c1r585mxa83js" path="res://Characters/ActualGoblin1.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="3_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://dj52y00r1k881" path="res://Pathfinding/StandardPathFinding.tscn" id="4_jyhfs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wfyh"]
@@ -27,19 +28,22 @@ use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0wfyh")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=879483120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9793, 0)
 
-[node name="ProtoController" parent="." instance=ExtResource("2_0wfyh")]
+[node name="ProtoController" parent="." unique_id=679522281 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4248, 0)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." groups=["Pickable"]]
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=535793188 groups=["Pickable"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, -21)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=2030675542]
 shape = SubResource("BoxShape3D_0wfyh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=934449234]
+
+[node name="BadFireplace" parent="." unique_id=203093352 instance=ExtResource("3_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 3.1110115)
 
 [node name="Path3D" type="Path3D" parent="." unique_id=1090641470]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.065119, 5.3374624, -4.034891)
