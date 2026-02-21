@@ -16,10 +16,11 @@ func _process(delta: float) -> void:
 			$"../Label3D".visible = true
 			if Input.is_action_pressed("Interact"):
 				objectInHand = object
-				#object.global_position = hand.global_position
-				#object.global_rotation = hand.global_rotation
-				#object.collision_layer =2
-				#object.linear_velocity = Vector3(0.1,3,0.1)
+		if object.is_in_group("Button"):
+			if Input.is_action_just_pressed("Interact"):
+				object.emit_button_press()
+	#	if  object.is_in_group("BadFireplace"):
+		#	$"../Label3D".visible = true
 	if objectInHand != null:
 		objectInHand.global_position = hand.global_position
 		objectInHand.global_rotation = hand.global_rotation
@@ -28,3 +29,11 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("Release"):
 		objectInHand = null
+		
+	if Global.goingToDie||Global.fakeDeath:
+		$"../GoingToDie".visible = true
+		$"../GoingToDie".text = str(Global.GTDCounter) +"!"
+	else:
+		$"../GoingToDie".visible = false
+
+	

@@ -23,6 +23,11 @@ config/icon="res://icon.svg"
 
 Global="*uid://dex6migwjokc1"
 
+[global_group]
+
+Button=""
+GoblinQueen=""
+
 [input]
 
 jump={

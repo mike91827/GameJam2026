@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dvwxtdmn2v44a"]
+
+[ext_resource type="Texture2D" uid="uid://clht17kwph4wu" path="res://MichaelPNG/32px fireplace.png" id="1_1ag43"]
+[ext_resource type="Script" uid="uid://b05r5baehd183" path="res://Puzzle/FireplacePuzzle/bad_fireplace.gd" id="1_fvojy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ag43"]
+size = Vector3(2.5885315, 1.5908737, 1.1520996)
+
+[node name="BadFireplace" type="Node3D" unique_id=203093352]
+script = ExtResource("1_fvojy")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=900094564]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+texture = ExtResource("1_1ag43")
+hframes = 6
+frame = 5
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1110001643]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1136247149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.078181565, -0.07773197, -0.054016262)
+shape = SubResource("BoxShape3D_1ag43")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
