@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgwk2mxin6xv0"]
+
+[ext_resource type="Script" uid="uid://dxqs8m150lfog" path="res://scripts/button.gd" id="1_mi6dp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n4pas"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mi6dp"]
+
+[node name="button" type="StaticBody3D" groups=["Button"]]
+script = ExtResource("1_mi6dp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_n4pas")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_mi6dp")

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cvcntrs6w0vc5"]
+[gd_scene load_steps=8 format=3 uid="uid://cvcntrs6w0vc5"]
 
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0wfyh"]
@@ -20,9 +20,9 @@ _data = {
 }
 point_count = 10
 
-[node name="Main" type="Node3D" unique_id=1925729651]
+[node name="Main" type="Node3D"]
 
-[node name="Floor" type="CSGBox3D" parent="." unique_id=1110431094]
+[node name="Floor" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
 use_collision = true
 size = Vector3(1000, 2, 1000)
@@ -40,7 +40,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, -21)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=2030675542]
 shape = SubResource("BoxShape3D_0wfyh")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=934449234]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
 
 [node name="BadFireplace" parent="." unique_id=203093352 instance=ExtResource("3_tbgi4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 3.1110115)
@@ -49,8 +49,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 3.1110115)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.065119, 5.3374624, -4.034891)
 curve = SubResource("Curve3D_sugp2")
 
-[node name="StandardPathFinding" parent="Path3D" unique_id=181767738 instance=ExtResource("4_jyhfs")]
+[node name="StandardPathFinding" parent="Path3D" instance=ExtResource("4_jyhfs")]
 transform = Transform3D(-0.43709993, 0.07706232, -0.89610356, 0, 0.9963215, 0.08568077, 0.8994086, 0.03745121, -0.43549377, 0.054405212, -1.113925, 0.58248186)
 
-[node name="ActualGoblin1" parent="Path3D/StandardPathFinding" unique_id=1984411180 instance=ExtResource("3_sugp2")]
+[node name="ActualGoblin1" parent="Path3D/StandardPathFinding" instance=ExtResource("3_sugp2")]
 transform = Transform3D(-0.43710342, -7.2637203e-09, 0.89941597, 0.0770625, 0.9963243, 0.037451327, -0.89610577, 0.08568104, -0.435495, 3.1289313, 0.112614155, -1.4558277)

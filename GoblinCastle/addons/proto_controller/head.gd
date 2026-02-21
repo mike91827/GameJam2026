@@ -16,6 +16,9 @@ func _process(delta: float) -> void:
 			$"../Label3D".visible = true
 			if Input.is_action_pressed("Interact"):
 				objectInHand = object
+    if object.is_in_group("Button"):
+			if Input.is_action_just_pressed("Interact"):
+				object.emit_button_press()
 	#	if  object.is_in_group("BadFireplace"):
 		#	$"../Label3D".visible = true
 	if objectInHand != null:
