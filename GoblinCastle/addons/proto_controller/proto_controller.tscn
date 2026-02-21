@@ -51,3 +51,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5256441, 0, -1.9530975)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.618304, -1.149249)
 visible = false
 text = "Press To Pick Up"
+
+[node name="GoingToDie" type="Label3D" parent="." unique_id=1278652770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5024354, -1.6638756)
+visible = false
+modulate = Color(1, 0.12941177, 0, 1)
+text = "FIREfw"
+font_size = 56
