@@ -15,6 +15,7 @@ omni_attenuation = 2.0
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+billboard = 1
 texture = ExtResource("1_1ag43")
 hframes = 6
 frame = 5

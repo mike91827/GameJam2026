@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cvcntrs6w0vc5"]
+[gd_scene load_steps=18 format=3 uid="uid://cvcntrs6w0vc5"]
 
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="1_85g3d"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]

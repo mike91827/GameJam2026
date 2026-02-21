@@ -11,6 +11,7 @@ script = ExtResource("1_72wl0")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+billboard = 1
 texture = ExtResource("1_8oity")
 hframes = 6
 frame = 5

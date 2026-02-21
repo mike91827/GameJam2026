@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjpm81w2i82d6"]
+[gd_scene load_steps=4 format=3 uid="uid://cralbkilrt1ek"]
 
 [ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="1_juel5"]
 [ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="2_8s0m4"]
+[ext_resource type="PackedScene" uid="uid://jlxdbvr1dvst" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="3_8s0m4"]
 
 [node name="FireplacePuzzle" type="Node3D"]
 
@@ -19,3 +20,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8038235, 0, 0.90257955)
 
 [node name="BadFireplace4" parent="." instance=ExtResource("2_8s0m4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.52396, 0, 2.9766223)
+
+[node name="FireStaff" parent="." instance=ExtResource("3_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.13092291, 0)
+visible = false
