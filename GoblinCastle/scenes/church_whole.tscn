@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://nqef17olugd3"]
+
+[ext_resource type="PackedScene" uid="uid://dj4jigp8qyv6s" path="res://assets/Models/ChurchWhole.glb" id="1_0vg5q"]
+[ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="2_xrk5n"]
+[ext_resource type="Texture2D" uid="uid://cnshuyl1gvqix" path="res://assets/textures/Stone_08-256x256.png" id="3_h1twl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5i0j"]
+albedo_texture = ExtResource("2_xrk5n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbvr1"]
+albedo_texture = ExtResource("3_h1twl")
+
+[node name="ChurchWhole" instance=ExtResource("1_0vg5q")]
+
+[node name="Castle_Mesh" parent="Church" index="0"]
+material_override = SubResource("StandardMaterial3D_g5i0j")
+
+[node name="Main" parent="Church/Roof" index="0"]
+material_override = SubResource("StandardMaterial3D_mbvr1")

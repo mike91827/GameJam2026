@@ -53,6 +53,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.618304, -1.149249)
 visible = false
 text = "Press To Pick Up"
 
+[node name="SignMessage" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.618304, -1.149249)
+visible = false
+
 [node name="GoingToDie" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5024354, -1.6638756)
 visible = false
