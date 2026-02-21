@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://be01yeaygobba"]
+[gd_scene load_steps=4 format=3 uid="uid://be01yeaygobba"]
 
 [ext_resource type="Texture2D" uid="uid://clht17kwph4wu" path="res://MichaelPNG/32px fireplace.png" id="1_8oity"]
 [ext_resource type="Script" uid="uid://c6ebgeqcbt7to" path="res://Puzzle/FireplacePuzzle/good_fireplace.gd" id="1_72wl0"]
@@ -6,19 +6,19 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_72wl0"]
 size = Vector3(2.5885315, 1.5908737, 1.1520996)
 
-[node name="GoodFireplace" type="Node3D" unique_id=207880498]
+[node name="GoodFireplace" type="Node3D"]
 script = ExtResource("1_72wl0")
 
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=177829274]
+[node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
 texture = ExtResource("1_8oity")
 hframes = 6
 frame = 5
 
-[node name="Area3D" type="Area3D" parent="." unique_id=1298817349]
+[node name="Area3D" type="Area3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=475597124]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.078181565, -0.07773197, -0.054016262)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.078181565, 0.47826302, -0.054016262)
 shape = SubResource("BoxShape3D_72wl0")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

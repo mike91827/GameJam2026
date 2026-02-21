@@ -1,0 +1,49 @@
+[gd_scene load_steps=10 format=3 uid="uid://dreo2nv47ka8d"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
+[ext_resource type="PackedScene" uid="uid://ctn868y2qb6g1" path="res://scenes/Castle.tscn" id="4_640p3"]
+[ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="4_btng2"]
+[ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
+[ext_resource type="PackedScene" uid="uid://bjpm81w2i82d6" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_g72jx"]
+panorama = ExtResource("4_btng2")
+
+[sub_resource type="Sky" id="Sky_85g3d"]
+sky_material = SubResource("PanoramaSkyMaterial_g72jx")
+
+[sub_resource type="Environment" id="Environment_71hdk"]
+background_mode = 2
+sky = SubResource("Sky_85g3d")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0eh0j"]
+albedo_texture = ExtResource("5_dhkuc")
+uv1_scale = Vector3(5, 5, 5)
+
+[node name="actual_main" type="Node3D"]
+
+[node name="ProtoController" parent="." instance=ExtResource("1_il6em")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2384696, 0)
+base_speed = 21.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 350, 440)
+light_color = Color(0.6888, 0.73415995, 0.84, 1)
+shadow_enabled = true
+directional_shadow_max_distance = 1.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_71hdk")
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
+use_collision = true
+size = Vector3(1000, 2, 1000)
+material = SubResource("StandardMaterial3D_0eh0j")
+
+[node name="Castle" parent="." instance=ExtResource("4_640p3")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.7770844, 1.6745119, -56.916397)
+
+[node name="FireplacePuzzle" parent="." instance=ExtResource("5_il6em")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -75.994415, 3.7245064, 1.6652603)
