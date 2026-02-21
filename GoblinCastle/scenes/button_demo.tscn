@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b1qx0ai4fciun"]
 
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_6k2nc"]
-[ext_resource type="Script" path="res://scenes/floor.gd" id="2_nf2o5"]
+[ext_resource type="Script" uid="uid://bcwgsj5lo6lcy" path="res://scenes/floor.gd" id="2_nf2o5"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_s6i7a"]
 [ext_resource type="PackedScene" path="res://scenes/Castle.tscn" id="3_nf2o5"]
 [ext_resource type="PackedScene" path="res://scenes/button.tscn" id="4_s6i7a"]

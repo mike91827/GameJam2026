@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cnfs2t28ub4tw"]
+
+[ext_resource type="Texture2D" uid="uid://dfo4uqdd58jke" path="res://MichaelPNG/Goblin.png" id="1_4mt0v"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4mt0v"]
+radius = 1.03125
+height = 2.9138184
+
+[node name="GoblinQueen" type="Node3D" unique_id=51542128]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=355216354 groups=["Pickable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=306816526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.076725245, 0)
+shape = SubResource("CapsuleShape3D_4mt0v")
+
+[node name="Sprite3D" type="Sprite3D" parent="RigidBody3D" unique_id=390034371]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+billboard = 1
+texture = ExtResource("1_4mt0v")
+hframes = 2
