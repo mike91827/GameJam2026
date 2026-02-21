@@ -44,6 +44,9 @@ extends CharacterBody3D
 ## Name of Input Action to toggle freefly mode.
 @export var input_freefly : String = "freefly"
 
+@export_group("Miscellaneous")
+@export var puzzle_manager : Node3D
+
 var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
