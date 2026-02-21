@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cvcntrs6w0vc5"]
+[gd_scene load_steps=18 format=3 uid="uid://cvcntrs6w0vc5"]
 
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="1_85g3d"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://dj52y00r1k881" path="res://Pathfinding/StandardPathFinding.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://beq827823tgnq" path="res://MichaelPNG/fireplaceMap.png" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="10_choun"]
+[ext_resource type="Script" uid="uid://bxukp5kd0q71q" path="res://scripts/fireplace_treasures.gd" id="11_ya4ey"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_85g3d"]
 panorama = ExtResource("1_85g3d")
@@ -35,56 +37,69 @@ _data = {
 }
 point_count = 10
 
-[node name="Main" type="Node3D" unique_id=937938415]
+[node name="Main" type="Node3D"]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=532507698]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 350, 440)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, -0.056568146, 350.18005, 440.09955)
 light_color = Color(0.6888, 0.73415995, 0.84, 1)
 shadow_enabled = true
 directional_shadow_max_distance = 1.0
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1800573949]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_choun")
 
-[node name="GoblinQueen" parent="." unique_id=51542128 instance=ExtResource("1_tipki")]
+[node name="GoblinQueen" parent="." instance=ExtResource("1_tipki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.126832, 4.894755, 0)
 
-[node name="Floor" type="CSGBox3D" parent="." unique_id=331396756]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94914186, 0.18006516, -0.39958242)
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0wfyh")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=879483120]
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9793, 0)
 
-[node name="ProtoController" parent="." unique_id=679522281 instance=ExtResource("2_0wfyh")]
+[node name="ProtoController" parent="." instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4248, 0)
+puzzle_manager = NodePath("../PuzzleManager")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=535793188 groups=["Pickable"]]
+[node name="RigidBody3D" type="RigidBody3D" parent="." groups=["Pickable"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, -21)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=2030675542]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
 shape = SubResource("BoxShape3D_0wfyh")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1693681144]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
 
-[node name="BadFireplace" parent="." unique_id=203093352 instance=ExtResource("3_tbgi4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 3.1110115)
+[node name="BadFireplace" parent="." instance=ExtResource("3_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3265438, 7.864887)
 
-[node name="Path3D" type="Path3D" parent="." unique_id=1090641470]
+[node name="Path3D" type="Path3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.065119, 5.3374624, -4.034891)
 curve = SubResource("Curve3D_sugp2")
 
-[node name="StandardPathFinding" parent="Path3D" unique_id=1802897364 instance=ExtResource("4_jyhfs")]
+[node name="StandardPathFinding" parent="Path3D" instance=ExtResource("4_jyhfs")]
 transform = Transform3D(-0.43709993, 0.07706232, -0.89610356, 0, 0.9963215, 0.08568077, 0.8994086, 0.03745121, -0.43549377, 0.054405212, -1.113925, 0.58248186)
 
-[node name="ActualGoblin1" parent="Path3D/StandardPathFinding" unique_id=1469023180 instance=ExtResource("3_sugp2")]
+[node name="ActualGoblin1" parent="Path3D/StandardPathFinding" instance=ExtResource("3_sugp2")]
 transform = Transform3D(-0.43710342, -7.2637203e-09, 0.89941597, 0.0770625, 0.9963243, 0.037451327, -0.89610577, 0.08568104, -0.435495, 3.1289313, 0.112614155, -1.4558277)
 
-[node name="GoodFireplace" parent="." unique_id=207880498 instance=ExtResource("6_tefeu")]
+[node name="GoodFireplace" parent="." instance=ExtResource("6_tefeu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.06518, 2.8839493, 0)
 
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=2063417336]
+[node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.419788, 12.932168, 2.3401709)
 texture = ExtResource("7_o6xl0")
+
+[node name="PuzzleManager" parent="." instance=ExtResource("10_choun")]
+temp_field = 69
+
+[node name="FireplaceTreasures" type="Node3D" parent="."]
+visible = false
+script = ExtResource("11_ya4ey")
+
+[node name="FireplaceTreasure" type="Node3D" parent="FireplaceTreasures"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.053556, 2.8556633, -21.383408)
+
+[connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplaceTreasures" method="_on_puzzle_manager_fireplace_puzzle_solved"]

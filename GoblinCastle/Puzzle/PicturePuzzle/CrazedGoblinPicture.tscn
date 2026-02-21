@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bje3ik23qe8tv"]
+
+[ext_resource type="Texture2D" uid="uid://dinpdag4jyd2d" path="res://MichaelPNG/goblinPicture.png" id="1_51fce"]
+
+[node name="CrazedGoblinPicture" type="Node3D" unique_id=306593314]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=476020287]
+texture = ExtResource("1_51fce")

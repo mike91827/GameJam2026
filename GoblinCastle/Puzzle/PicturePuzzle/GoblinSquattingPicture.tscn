@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d1yrplf6a27ib"]
+
+[ext_resource type="Texture2D" uid="uid://bbav5kjx8r6rq" path="res://MichaelPNG/goblinSquattingPicture.png" id="1_lwjkj"]
+
+[node name="GoblinSquattingPicture" type="Node3D" unique_id=1270292460]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=359233530]
+texture = ExtResource("1_lwjkj")

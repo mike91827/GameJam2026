@@ -14,12 +14,16 @@ GameJam2026/       # GitHub repo name
 
 ## Credits
 Michael Le (Programming)
-Rover (Programming)
+Lander (rover) (Programming)
 Luyao (3D art)
-Chris Hay (3D art)
+Chris Hay (ERC) (3D art)
 Michael Roncin (Music)
 
 ## External assets used
 * https://screamingbrainstudios.itch.io/tiny-texture-pack
 * https://github.com/Brackeys/brackeys-proto-controller
 * https://vurmux.itch.io/urizen-onebit-tileset
+* https://distantlantern.itch.io/allsky-free-godot-edition
+  * (MIT license)
+  * https://github.com/rpgwhitelock/AllSkyFree_Godot
+  * Original creator: http://richardwhitelock.com/ 

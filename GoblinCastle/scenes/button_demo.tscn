@@ -1,30 +1,30 @@
-[gd_scene format=3 uid="uid://b1qx0ai4fciun"]
+[gd_scene load_steps=7 format=3 uid="uid://b1qx0ai4fciun"]
 
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_6k2nc"]
 [ext_resource type="Script" uid="uid://bcwgsj5lo6lcy" path="res://scenes/floor.gd" id="2_nf2o5"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_s6i7a"]
-[ext_resource type="PackedScene" path="res://scenes/Castle.tscn" id="3_nf2o5"]
-[ext_resource type="PackedScene" path="res://scenes/button.tscn" id="4_s6i7a"]
+[ext_resource type="PackedScene" uid="uid://ctn868y2qb6g1" path="res://scenes/Castle.tscn" id="3_nf2o5"]
+[ext_resource type="PackedScene" uid="uid://dgwk2mxin6xv0" path="res://scenes/button.tscn" id="4_s6i7a"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4mi0"]
 albedo_texture = ExtResource("1_6k2nc")
 uv1_scale = Vector3(5, 5, 5)
 
-[node name="button-demo" type="Node3D" unique_id=1539770519]
+[node name="button-demo" type="Node3D"]
 
-[node name="Floor" type="CSGBox3D" parent="." unique_id=190021790]
+[node name="Floor" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_n4mi0")
 script = ExtResource("2_nf2o5")
 
-[node name="ProtoController" parent="." unique_id=1921730501 instance=ExtResource("2_s6i7a")]
+[node name="ProtoController" parent="." instance=ExtResource("2_s6i7a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4248, 0)
 
-[node name="Castle" parent="." unique_id=441160236 instance=ExtResource("3_nf2o5")]
+[node name="Castle" parent="." instance=ExtResource("3_nf2o5")]
 
-[node name="StaticBody3D" parent="." unique_id=117198044 instance=ExtResource("4_s6i7a")]
+[node name="StaticBody3D" parent="." instance=ExtResource("4_s6i7a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.071258, 14.231043, 0)
 
 [connection signal="button_pressed" from="StaticBody3D" to="Floor" method="_on_static_body_3d_button_pressed"]
