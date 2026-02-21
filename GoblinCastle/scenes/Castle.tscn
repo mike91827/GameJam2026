@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctn868y2qb6g1"]
+[gd_scene format=3 uid="uid://ctn868y2qb6g1"]
 
 [ext_resource type="Texture2D" uid="uid://dikxaicbvadyu" path="res://assets/textures/Bricks_23-256x256.png" id="1_4sc5h"]
 [ext_resource type="Texture2D" uid="uid://cinelqrbrvch1" path="res://assets/textures/Tile_13-256x256.png" id="1_ec4i4"]
@@ -38,214 +38,214 @@ uv1_scale = Vector3(1, 0.5, 1)
 albedo_texture = ExtResource("3_f8mm7")
 uv1_scale = Vector3(1, 0.5, 1)
 
-[node name="Castle" type="Node3D"]
+[node name="Castle" type="Node3D" unique_id=1092419099]
 
-[node name="FloorCastle" type="CSGBox3D" parent="."]
+[node name="FloorCastle" type="CSGBox3D" parent="." unique_id=457274692]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 visible = false
 use_collision = true
 size = Vector3(400, 8, 600)
 
-[node name="Walls" type="CSGCombiner3D" parent="."]
+[node name="Walls" type="CSGCombiner3D" parent="." unique_id=1230629472]
 use_collision = true
 
-[node name="BaseFloorInside" type="CSGBox3D" parent="Walls"]
+[node name="BaseFloorInside" type="CSGBox3D" parent="Walls" unique_id=411818173]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)
 size = Vector3(390, 1, 590)
 material = SubResource("StandardMaterial3D_6dfod")
 
-[node name="Walls" type="CSGBox3D" parent="Walls"]
+[node name="Walls" type="CSGBox3D" parent="Walls" unique_id=396469326]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 154, 0)
 use_collision = true
 size = Vector3(400, 300, 600)
 material = SubResource("StandardMaterial3D_k4ahp")
 
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Walls/Walls"]
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Walls/Walls" unique_id=1476072504]
 transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, -24.8169, -145.5, 318.501)
 operation = 2
 
-[node name="InnerEmptySpace" type="CSGBox3D" parent="Walls/Walls"]
+[node name="InnerEmptySpace" type="CSGBox3D" parent="Walls/Walls" unique_id=1091683782]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 operation = 2
 size = Vector3(390, 300, 590)
 
-[node name="WindowFront" type="CSGCylinder3D" parent="Walls/Walls"]
+[node name="WindowFront" type="CSGCylinder3D" parent="Walls/Walls" unique_id=2069044238]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 73, 297)
 operation = 2
 radius = 40.0
 height = 10.0
 sides = 16
 
-[node name="WindowBack" type="CSGCylinder3D" parent="Walls/Walls"]
+[node name="WindowBack" type="CSGCylinder3D" parent="Walls/Walls" unique_id=214867183]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 36, -295.317)
 operation = 2
 radius = 80.0
 height = 10.0
 sides = 16
 
-[node name="Ground" type="CSGBox3D" parent="."]
+[node name="Ground" type="CSGBox3D" parent="." unique_id=580862040]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.006, -0.5, -0.499)
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0gx1v")
 
-[node name="Front Stairs" type="CSGCombiner3D" parent="."]
+[node name="Front Stairs" type="CSGCombiner3D" parent="." unique_id=1050018063]
 
-[node name="Stairs" type="CSGBox3D" parent="Front Stairs"]
+[node name="Stairs" type="CSGBox3D" parent="Front Stairs" unique_id=1590148335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 308)
 size = Vector3(400, 8, 16)
 material = SubResource("StandardMaterial3D_qlvdw")
 
-[node name="Cutout1" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout1" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=1866986660]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 4)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout2" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout2" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=1359392751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 5)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout3" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout3" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=832331272]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 6)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout4" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout4" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=373070936]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 7)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout5" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout5" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=2012460550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 8)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout6" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout6" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=155096325]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 9)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout7" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout7" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=1218820746]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 10)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout8" type="CSGBox3D" parent="Front Stairs/Stairs"]
+[node name="Cutout8" type="CSGBox3D" parent="Front Stairs/Stairs" unique_id=1115146086]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="2ndFl(+InnerStairs)" type="CSGCombiner3D" parent="."]
+[node name="2ndFl(+InnerStairs)" type="CSGCombiner3D" parent="." unique_id=107347545]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.0334, -221.981)
 
-[node name="Stairs" type="CSGBox3D" parent="2ndFl(+InnerStairs)"]
+[node name="Stairs" type="CSGBox3D" parent="2ndFl(+InnerStairs)" unique_id=1103342405]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 23)
 size = Vector3(400, 8, 200)
 
-[node name="Cutout1" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout1" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=341339660]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 89)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout2" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout2" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=1767315864]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 90)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout3" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout3" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=387973588]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 91)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout4" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout4" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=121595880]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 92)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout5" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout5" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=1433618118]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 93)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout6" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout6" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=1090642346]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 94)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout7" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout7" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=954661658]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 95)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Cutout8" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs"]
+[node name="Cutout8" type="CSGBox3D" parent="2ndFl(+InnerStairs)/Stairs" unique_id=1538405790]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 96)
 operation = 2
 size = Vector3(400, 8, 8)
 
-[node name="Pillar1" type="CSGCombiner3D" parent="."]
+[node name="Pillar1" type="CSGCombiner3D" parent="." unique_id=1395693016]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189, 294, 308)
 
-[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar1"]
+[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar1" unique_id=576904773]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -146, 1)
 radius = 6.0
 height = 310.0
 material = SubResource("StandardMaterial3D_oxqk5")
 
-[node name="PillarBase1" type="CSGBox3D" parent="Pillar1"]
+[node name="PillarBase1" type="CSGBox3D" parent="Pillar1" unique_id=1358550444]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -290, 0)
 size = Vector3(28, 20, 20)
 
-[node name="PillarTop1" type="CSGBox3D" parent="Pillar1"]
+[node name="PillarTop1" type="CSGBox3D" parent="Pillar1" unique_id=1517481876]
 size = Vector3(28, 20, 20)
 
-[node name="Pillar2" type="CSGCombiner3D" parent="."]
+[node name="Pillar2" type="CSGCombiner3D" parent="." unique_id=334014031]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -129, 294, 308)
 
-[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar2"]
+[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar2" unique_id=2041065986]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -146, 1)
 radius = 6.0
 height = 310.0
 material = SubResource("StandardMaterial3D_n5pch")
 
-[node name="PillarBase1" type="CSGBox3D" parent="Pillar2"]
+[node name="PillarBase1" type="CSGBox3D" parent="Pillar2" unique_id=1124890991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -290, 0)
 size = Vector3(28, 20, 20)
 
-[node name="PillarTop1" type="CSGBox3D" parent="Pillar2"]
+[node name="PillarTop1" type="CSGBox3D" parent="Pillar2" unique_id=2025354854]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 size = Vector3(28, 20, 20)
 
-[node name="Pillar3" type="CSGCombiner3D" parent="."]
+[node name="Pillar3" type="CSGCombiner3D" parent="." unique_id=1041118821]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129, 294, 308)
 
-[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar3"]
+[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar3" unique_id=40733388]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -146, 1)
 radius = 6.0
 height = 310.0
 material = SubResource("StandardMaterial3D_finjy")
 
-[node name="PillarBase1" type="CSGBox3D" parent="Pillar3"]
+[node name="PillarBase1" type="CSGBox3D" parent="Pillar3" unique_id=1118069702]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -290, 0)
 size = Vector3(28, 20, 20)
 
-[node name="PillarTop1" type="CSGBox3D" parent="Pillar3"]
+[node name="PillarTop1" type="CSGBox3D" parent="Pillar3" unique_id=1739549860]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 size = Vector3(28, 20, 20)
 
-[node name="Pillar4" type="CSGCombiner3D" parent="."]
+[node name="Pillar4" type="CSGCombiner3D" parent="." unique_id=389666014]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 189, 294, 308)
 
-[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar4"]
+[node name="OuterPillar1" type="CSGCylinder3D" parent="Pillar4" unique_id=1035192752]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -146, 1)
 radius = 6.0
 height = 310.0
 material = SubResource("StandardMaterial3D_gkimf")
 
-[node name="PillarBase1" type="CSGBox3D" parent="Pillar4"]
+[node name="PillarBase1" type="CSGBox3D" parent="Pillar4" unique_id=1746805557]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -290, 0)
 size = Vector3(28, 20, 20)
 
-[node name="PillarTop1" type="CSGBox3D" parent="Pillar4"]
+[node name="PillarTop1" type="CSGBox3D" parent="Pillar4" unique_id=899125811]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
 size = Vector3(28, 20, 20)
