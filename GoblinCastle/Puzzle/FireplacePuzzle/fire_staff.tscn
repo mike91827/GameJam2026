@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://jlxdbvr1dvst"]
+[gd_scene format=3 uid="uid://jlxdbvr1dvst"]
 
 [ext_resource type="Texture2D" uid="uid://dpilrscq44ebn" path="res://assets/sprites/sprite_firestaff.png" id="1_s48sf"]
 
