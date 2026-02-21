@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c1r585mxa83js" path="res://Characters/ActualGoblin1.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="3_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://dj52y00r1k881" path="res://Pathfinding/StandardPathFinding.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="6_tefeu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wfyh"]
 albedo_texture = ExtResource("1_o5qli")
@@ -54,3 +55,6 @@ transform = Transform3D(-0.43709993, 0.07706232, -0.89610356, 0, 0.9963215, 0.08
 
 [node name="ActualGoblin1" parent="Path3D/StandardPathFinding" unique_id=1984411180 instance=ExtResource("3_sugp2")]
 transform = Transform3D(-0.43710342, -7.2637203e-09, 0.89941597, 0.0770625, 0.9963243, 0.037451327, -0.89610577, 0.08568104, -0.435495, 3.1289313, 0.112614155, -1.4558277)
+
+[node name="GoodFireplace" parent="." unique_id=207880498 instance=ExtResource("6_tefeu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.06518, 2.8839493, 0)

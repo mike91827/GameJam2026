@@ -27,7 +27,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Release"):
 		objectInHand = null
 		
-	if Global.goingToDie:
+	if Global.goingToDie||Global.fakeDeath:
 		$"../GoingToDie".visible = true
 		$"../GoingToDie".text = str(Global.GTDCounter) +"!"
 	else:
