@@ -12,8 +12,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$"../Label3D".visible = false
 	var object = raycast.get_collider()
-	if raycast.is_colliding():		
-		if object.is_in_group("Pickable"):
+	if raycast.is_colliding():	
+		if object.is_in_group("Pickable") && object.visible:
 			$"../Label3D".visible = true
 			if Input.is_action_pressed("Interact"):
 				objectInHand = object
@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 		objectInHand.global_position = hand.global_position
 		objectInHand.global_rotation = hand.global_rotation
 		objectInHand.collision_layer =2
-		objectInHand.linear_velocity = Vector3(0.1,3,0.1)
+		# objectInHand.linear_velocity = Vector3(0.1,3,0.1)
 	
 	if Input.is_action_just_pressed("Release"):
 		objectInHand = null
