@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bje3ik23qe8tv" path="res://Puzzle/PicturePuzzle/CrazedGoblinPicture.tscn" id="4_i6rus"]
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="5_17xoa"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="6_ukqbf"]
+[ext_resource type="PackedScene" uid="uid://b81e8wqoqyn5t" path="res://Puzzle/AlterPuzzle/TreasuresOnAlter.tscn" id="7_ay4mc"]
+[ext_resource type="PackedScene" uid="uid://dwio36efih3q1" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="8_ee46y"]
 
 [node name="MichaelTestScene" type="Node3D" unique_id=1845220353]
 
@@ -26,3 +28,9 @@ transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 225, 34, 0)
 
 [node name="GoblinSquattingPicture" parent="." unique_id=1270292460 instance=ExtResource("6_ukqbf")]
 transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 179, 18, 113)
+
+[node name="Area3D" parent="." unique_id=683087547 instance=ExtResource("8_ee46y")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 115, 16, 166)
+
+[node name="TreasuresOnAlter" parent="." unique_id=661144689 instance=ExtResource("7_ay4mc")]
+transform = Transform3D(37, 0, 0, 0, 37, 0, 0, 0, 37, 110, 15, 97)
