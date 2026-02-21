@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://csw306kh4i36h"
+path="res://.godot/imported/Goblin Castle Intro V5.ogg-232c8bb485aba7226dfd2b84397f5af0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Goblin Castle Intro V5.ogg"
+dest_files=["res://.godot/imported/Goblin Castle Intro V5.ogg-232c8bb485aba7226dfd2b84397f5af0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
