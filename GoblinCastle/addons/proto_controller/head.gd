@@ -20,6 +20,9 @@ func _process(delta: float) -> void:
 				#object.global_rotation = hand.global_rotation
 				#object.collision_layer =2
 				#object.linear_velocity = Vector3(0.1,3,0.1)
+		if object.is_in_group("Button"):
+			if Input.is_action_just_pressed("Interact"):
+				object.emit_button_press()
 	if objectInHand != null:
 		objectInHand.global_position = hand.global_position
 		objectInHand.global_rotation = hand.global_rotation
