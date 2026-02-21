@@ -5,7 +5,9 @@ var loop = 1
 var goingToDie=false
 var fakeDeath = false
 var GTDCounter = -1;
-
+#staff,dagger,shield
+var hasTreasures = [false,false,false]
+var treasureTextures = [preload("res://assets/sprites/sprite_firestaff.png"),preload("res://assets/sprites/sprite_dagger.png"),preload("res://assets/sprites/sprite_shield.png")]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

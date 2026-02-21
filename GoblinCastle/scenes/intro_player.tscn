@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c7qfmif5ck0my"]
+
+[ext_resource type="AudioStream" uid="uid://csw306kh4i36h" path="res://assets/audio/Goblin Castle Intro V5.ogg" id="1_fnv7h"]
+
+[node name="intro_player" type="AudioStreamPlayer" unique_id=245785272]
+stream = ExtResource("1_fnv7h")

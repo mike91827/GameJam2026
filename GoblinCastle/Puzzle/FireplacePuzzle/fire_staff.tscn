@@ -1,17 +1,33 @@
-[gd_scene format=3 uid="uid://jlxdbvr1dvst"]
+[gd_scene format=3 uid="uid://dwio36efih3q1"]
 
-[ext_resource type="Texture2D" uid="uid://dpilrscq44ebn" path="res://assets/sprites/sprite_firestaff.png" id="1_s48sf"]
+[ext_resource type="Script" uid="uid://cdh65j646j8uw" path="res://Puzzle/FireplacePuzzle/fire_staff.gd" id="1_h7a70"]
+[ext_resource type="Texture2D" uid="uid://bmo55xg7nx1bv" path="res://assets/sprites/sprite_firestaff.png" id="1_s48sf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_s48sf"]
+size = Vector3(0.47338867, 0.78933716, 0.61050415)
 
-[node name="Area3D" type="Area3D" groups=["Pickable"]]
+[sub_resource type="BoxShape3D" id="BoxShape3D_h7a70"]
+size = Vector3(0.09907532, 0.16670656, 0.100608826)
 
-[node name="FireStaff" type="Sprite3D" parent="."]
+[node name="Area3D" type="Area3D" unique_id=953351148 groups=["FireStaff", "Pickable"]]
+script = ExtResource("1_h7a70")
+
+[node name="FireStaff" type="Sprite3D" parent="." unique_id=1894606784]
 transform = Transform3D(-2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
 flip_h = true
 billboard = 1
 texture_filter = 0
 texture = ExtResource("1_s48sf")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=677496670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0037841797, -0.021194458, -0.020370483)
 shape = SubResource("BoxShape3D_s48sf")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1467461184 groups=["FireStaff"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=92764658 groups=["FireStaff"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00011444092, 0.009680986, 0.0114479065)
+shape = SubResource("BoxShape3D_h7a70")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]

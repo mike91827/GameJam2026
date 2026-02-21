@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b81e8wqoqyn5t"]
+
+[ext_resource type="Texture2D" uid="uid://dnx2n3dx5nop5" path="res://assets/sprites/sprite_dagger.png" id="1_0ytek"]
+[ext_resource type="Script" uid="uid://dicr7ceojkbab" path="res://Puzzle/AlterPuzzle/treasures_on_alter.gd" id="1_r72d7"]
+[ext_resource type="Texture2D" uid="uid://bmo55xg7nx1bv" path="res://assets/sprites/sprite_firestaff.png" id="2_r72d7"]
+[ext_resource type="Texture2D" uid="uid://c807rimwnlmn5" path="res://assets/sprites/sprite_shield.png" id="3_1m60d"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_r72d7"]
+radius = 0.36887226
+
+[node name="TreasuresOnAlter" type="Node3D" unique_id=661144689]
+script = ExtResource("1_r72d7")
+
+[node name="Dagger" type="Sprite3D" parent="." unique_id=447048517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17045736, 0, 0)
+visible = false
+billboard = 1
+texture = ExtResource("1_0ytek")
+
+[node name="Mage" type="Sprite3D" parent="." unique_id=1236700751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.20940936)
+visible = false
+billboard = 1
+texture = ExtResource("2_r72d7")
+
+[node name="Shield" type="Sprite3D" parent="." unique_id=642769290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19194858, 0, 0)
+visible = false
+billboard = 1
+texture = ExtResource("3_1m60d")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=631185717]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1898573247]
+shape = SubResource("SphereShape3D_r72d7")
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
