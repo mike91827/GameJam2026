@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dehaw1vvbyn0l"]
+
+[ext_resource type="Script" uid="uid://27d233juedne" path="res://scenes/music.gd" id="1_05ggv"]
+[ext_resource type="PackedScene" uid="uid://c7qfmif5ck0my" path="res://scenes/intro_player.tscn" id="2_qnihg"]
+[ext_resource type="PackedScene" uid="uid://bn2f2vx3uebo5" path="res://scenes/loop_player.tscn" id="3_ejojg"]
+
+[node name="music" type="AudioStreamPlayer" unique_id=1653993637]
+script = ExtResource("1_05ggv")
+
+[node name="intro_player" parent="." unique_id=245785272 instance=ExtResource("2_qnihg")]
+
+[node name="loop_player" parent="." unique_id=66334964 instance=ExtResource("3_ejojg")]

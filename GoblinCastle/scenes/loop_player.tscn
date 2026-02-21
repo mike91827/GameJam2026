@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bn2f2vx3uebo5"]
+
+[ext_resource type="AudioStream" uid="uid://duhuj3k13415t" path="res://assets/audio/Goblin Castle Loop V5.ogg" id="1_vvmsw"]
+
+[node name="loop_player" type="AudioStreamPlayer" unique_id=66334964]
+stream = ExtResource("1_vvmsw")
