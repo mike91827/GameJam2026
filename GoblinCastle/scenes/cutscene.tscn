@@ -608,4 +608,6 @@ size = Vector3(1, 0.8334961, 1)
 [node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("15_8qop0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.17988)
 
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=611827317]
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
