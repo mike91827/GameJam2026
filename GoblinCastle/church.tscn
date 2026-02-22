@@ -4,8 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="2_ce1d6"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="2_rcu85"]
 [ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
-[ext_resource type="PackedScene" uid="uid://d2vwtip8a245s" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
+[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
 [ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
+[ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="7_6f434"]
+[ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="8_7u5lq"]
 
 [node name="Church" type="Node3D" unique_id=1197276794]
 
@@ -40,3 +42,71 @@ transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -4
 
 [node name="Torch_R3" parent="Torches" unique_id=751916383 instance=ExtResource("3_qx4ao")]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, 32.879036)
+
+[node name="Benches" type="Node3D" parent="." unique_id=46862813]
+
+[node name="Bench002" parent="Benches" unique_id=811759771 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 41.025734)
+
+[node name="Bench003" parent="Benches" unique_id=861568786 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 41.025734)
+
+[node name="Bench004" parent="Benches" unique_id=885022084 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 32.34237)
+
+[node name="Bench005" parent="Benches" unique_id=1974595527 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 32.34237)
+
+[node name="Bench006" parent="Benches" unique_id=1518438063 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 21.805382)
+
+[node name="Bench007" parent="Benches" unique_id=623468406 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 21.805382)
+
+[node name="Bench008" parent="Benches" unique_id=1025372200 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 11.703255)
+
+[node name="Bench009" parent="Benches" unique_id=1708961756 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 11.703255)
+
+[node name="Bench010" parent="Benches" unique_id=1898247443 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 1.0322142)
+
+[node name="Bench011" parent="Benches" unique_id=649209015 instance=ExtResource("7_6f434")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 1.0322142)
+
+[node name="Bench012" parent="Benches" unique_id=871027516 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 5.3491774, 1.3, -6.6457386)
+
+[node name="Bench013" parent="Benches" unique_id=1509435968 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 15.71267, 1.3, -6.6457386)
+
+[node name="Bench014" parent="Benches" unique_id=192124893 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 26.61935, 1.3, -6.6457386)
+
+[node name="Bench015" parent="Benches" unique_id=1610588044 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 5.3491774, 1.3, -13.292742)
+
+[node name="Bench016" parent="Benches" unique_id=1213791418 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 15.71267, 1.3, -13.292742)
+
+[node name="Bench017" parent="Benches" unique_id=824394494 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 26.61935, 1.3, -13.292742)
+
+[node name="Bench018" parent="Benches" unique_id=1071633629 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -35.991875, 1.3, -6.6457386)
+
+[node name="Bench019" parent="Benches" unique_id=1543788981 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -25.628384, 1.3, -6.6457386)
+
+[node name="Bench020" parent="Benches" unique_id=1003080092 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -14.721703, 1.3, -6.6457386)
+
+[node name="Bench021" parent="Benches" unique_id=1315646653 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -35.991875, 1.3, -13.292742)
+
+[node name="Bench022" parent="Benches" unique_id=188765274 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -25.628384, 1.3, -13.292742)
+
+[node name="Bench023" parent="Benches" unique_id=316716479 instance=ExtResource("8_7u5lq")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -14.721703, 1.3, -13.292742)
