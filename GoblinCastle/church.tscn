@@ -4,12 +4,16 @@
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="2_ce1d6"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="2_rcu85"]
 [ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
-[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
+[ext_resource type="PackedScene" uid="uid://d2vwtip8a245s" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
 [ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
+[ext_resource type="PackedScene" uid="uid://dc5a7p0mtp1v1" path="res://Puzzle/PicturePuzzle/GhostPicture.tscn" id="5_xcmki"]
+[ext_resource type="PackedScene" uid="uid://bje3ik23qe8tv" path="res://Puzzle/PicturePuzzle/CrazedGoblinPicture.tscn" id="6_0t755"]
 [ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="7_6f434"]
+[ext_resource type="PackedScene" uid="uid://doi6jh3657hw" path="res://Puzzle/Shield/Sheild.tscn" id="7_ubr35"]
 [ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="8_7u5lq"]
-[ext_resource type="PackedScene" uid="uid://bktuvfa5c3dmg" path="res://wall.tscn" id="9_7u5lq"]
+[ext_resource type="PackedScene" path="res://wall.tscn" id="9_7u5lq"]
 [ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="10_5se3q"]
+[ext_resource type="PackedScene" uid="uid://btwcaa581gtxn" path="res://Puzzle/PicturePuzzle/Dagger.tscn" id="11_33n2h"]
 
 [node name="Church" type="Node3D" unique_id=1197276794]
 
@@ -24,6 +28,15 @@ transform = Transform3D(-2.6222e-07, 6.7131745e-09, 5, 0.11518465, 7.9985256, -1
 
 [node name="MichaelPainting" parent="ChurchWhole2" unique_id=538631061 instance=ExtResource("3_m8tyq")]
 transform = Transform3D(5.962441e-08, 0, -5, 0, 5, 0, 5, 0, 5.962441e-08, 116.783424, 12.203758, -96.7418)
+
+[node name="GhostPicture" parent="ChurchWhole2" unique_id=1556563439 instance=ExtResource("5_xcmki")]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 105.040695, 7.632778, -164.49883)
+
+[node name="CrazedGoblinPicture" parent="ChurchWhole2" unique_id=306593314 instance=ExtResource("6_0t755")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 55.140903, 7, -164)
+
+[node name="Sheild" parent="ChurchWhole2" unique_id=318047231 instance=ExtResource("7_ubr35")]
+transform = Transform3D(-2.1855695e-07, 1.7592083, 4.680298, 0, 4.680298, -1.7592083, -5, -7.6897436e-08, -2.045823e-07, 55.193665, 1.8965535, -140.46855)
 
 [node name="Torches" type="Node3D" parent="." unique_id=1130759126]
 
@@ -144,3 +157,6 @@ size = Vector3(1, 0.8334961, 1)
 
 [node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("10_5se3q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.17988)
+
+[node name="Dagger" parent="." unique_id=166409536 instance=ExtResource("11_33n2h")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 20, 5, -43)
