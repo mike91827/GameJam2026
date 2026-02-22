@@ -2,13 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://dc5a7p0mtp1v1" path="res://Puzzle/PicturePuzzle/GhostPicture.tscn" id="1_h0bd4"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_neqop"]
-[ext_resource type="PackedScene" path="res://scenes/Castle.tscn" id="2_h0bd4"]
+[ext_resource type="PackedScene" uid="uid://ctn868y2qb6g1" path="res://scenes/Castle.tscn" id="2_h0bd4"]
 [ext_resource type="PackedScene" uid="uid://bje3ik23qe8tv" path="res://Puzzle/PicturePuzzle/CrazedGoblinPicture.tscn" id="4_i6rus"]
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="5_17xoa"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="6_ukqbf"]
 [ext_resource type="PackedScene" uid="uid://b81e8wqoqyn5t" path="res://Puzzle/AlterPuzzle/TreasuresOnAlter.tscn" id="7_ay4mc"]
 [ext_resource type="PackedScene" uid="uid://dwio36efih3q1" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="8_ee46y"]
-[ext_resource type="PackedScene" uid="uid://btwcaa581gtxn" path="res://Puzzle/PicturePuzzle/Dagger.tscn" id="9_r8v1g"]
+[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/Dagger.tscn" id="9_r8v1g"]
 [ext_resource type="PackedScene" uid="uid://doi6jh3657hw" path="res://Puzzle/Shield/Sheild.tscn" id="10_5vgek"]
 [ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="10_uxu40"]
 
@@ -16,6 +16,7 @@
 
 [node name="ProtoController" parent="." unique_id=306508080 instance=ExtResource("1_neqop")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194.00511, 100.81718, 166.69211)
+base_speed = 28.0
 
 [node name="Castle" parent="." unique_id=1092419099 instance=ExtResource("2_h0bd4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.037735, 0, 0)

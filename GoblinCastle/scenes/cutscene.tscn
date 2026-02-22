@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://bb0fkfwatu6r7"]
+
+[ext_resource type="PackedScene" uid="uid://nqef17olugd3" path="res://scenes/church_whole.tscn" id="1_edmg7"]
+[ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="2_2bm7f"]
+[ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="3_fs8wb"]
+[ext_resource type="PackedScene" uid="uid://cnfs2t28ub4tw" path="res://Characters/GoblinQueen/GoblinQueen.tscn" id="4_bb0yx"]
+[ext_resource type="Script" uid="uid://cp7m5sfrb70mi" path="res://scenes/cutscene_message.gd" id="5_fs8wb"]
+[ext_resource type="Script" uid="uid://bhohjluoi2xwh" path="res://DeathScene/button.gd" id="6_bb0yx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ptll"]
+albedo_texture = ExtResource("2_2bm7f")
+uv1_scale = Vector3(5, 5, 5)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_d18fx"]
+panorama = ExtResource("3_fs8wb")
+
+[sub_resource type="Sky" id="Sky_85g3d"]
+sky_material = SubResource("PanoramaSkyMaterial_d18fx")
+
+[sub_resource type="Environment" id="Environment_75brc"]
+background_mode = 2
+sky = SubResource("Sky_85g3d")
+tonemap_mode = 2
+
+[sub_resource type="Animation" id="Animation_bb0yx"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156)
+
+[sub_resource type="Animation" id="Animation_3ptll"]
+resource_name = "cutscene"
+length = 2.0
+step = 1.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156, 2, 1, 76.3637, 32.74843, -121.80845)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d18fx"]
+_data = {
+&"RESET": SubResource("Animation_bb0yx"),
+&"cutscene": SubResource("Animation_3ptll")
+}
+
+[node name="Node3D" type="Node3D" unique_id=1572862609]
+
+[node name="ChurchWhole" parent="." unique_id=1178387360 instance=ExtResource("1_edmg7")]
+
+[node name="Floor" type="CSGBox3D" parent="." unique_id=1188679969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94914186, 0.18006516, -0.39958242)
+use_collision = true
+size = Vector3(1000, 2, 1000)
+material = SubResource("StandardMaterial3D_3ptll")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=638467521]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, -0.056568146, 350.18005, 440.09955)
+visible = false
+light_color = Color(0.6888, 0.73415995, 0.84, 1)
+shadow_enabled = true
+directional_shadow_max_distance = 1.0
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=440396088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.3637, 32.74843, -82.591156)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2095475552]
+environment = SubResource("Environment_75brc")
+
+[node name="GoblinQueen" parent="." unique_id=51542128 instance=ExtResource("4_bb0yx")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 80.4078, 20.989836, -171.60765)
+
+[node name="CutsceneMessage" type="Label3D" parent="." unique_id=2115007416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.12317, 35.013874, -136.08618)
+modulate = Color(0.14399998, 0.48, 0, 1)
+font_size = 700
+script = ExtResource("5_fs8wb")
+
+[node name="ThankYou" type="Label3D" parent="." unique_id=1968626597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.123, 35.014, -137.3151)
+visible = false
+modulate = Color(0.14399998, 0.48, 0, 1)
+text = "THANKS FOR 
+PLAYING"
+font_size = 800
+
+[node name="Button" type="Button" parent="." unique_id=1082360041]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -143.5
+offset_top = -105.0
+offset_right = 143.5
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "PLAY AGAIN"
+script = ExtResource("6_bb0yx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=53031679]
+libraries/ = SubResource("AnimationLibrary_d18fx")
+autoplay = &"cutscene"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
