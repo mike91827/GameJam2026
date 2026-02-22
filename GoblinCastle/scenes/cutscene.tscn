@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="3_fs8wb"]
 [ext_resource type="PackedScene" uid="uid://cnfs2t28ub4tw" path="res://Characters/GoblinQueen/GoblinQueen.tscn" id="4_bb0yx"]
 [ext_resource type="Script" uid="uid://cp7m5sfrb70mi" path="res://scenes/cutscene_message.gd" id="5_fs8wb"]
+[ext_resource type="Script" uid="uid://bhohjluoi2xwh" path="res://DeathScene/button.gd" id="6_bb0yx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ptll"]
 albedo_texture = ExtResource("2_2bm7f")
@@ -59,3 +60,21 @@ visible = false
 modulate = Color(0.14399998, 0.48, 0, 1)
 text = "THANKS FOR PLAYING"
 font_size = 800
+
+[node name="Button" type="Button" parent="." unique_id=1082360041]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -143.5
+offset_top = -105.0
+offset_right = 143.5
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "PLAY AGAIN"
+script = ExtResource("6_bb0yx")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
