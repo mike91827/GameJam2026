@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://m7s62cndplgg"]
+
+[ext_resource type="PackedScene" uid="uid://d1cft804uu4b0" path="res://scenes/shed_02.tscn" id="1_kegry"]
+[ext_resource type="PackedScene" uid="uid://dqpv4uem5crme" path="res://scenes/chair.tscn" id="2_yhudh"]
+[ext_resource type="PackedScene" uid="uid://dqh4bhads6scm" path="res://scenes/table_rectangle.tscn" id="3_id2tl"]
+[ext_resource type="PackedScene" uid="uid://bvpjp7t42damo" path="res://scenes/table_round.tscn" id="4_3lmg2"]
+[ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="5_fh0rm"]
+[ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="6_u32ps"]
+
+[node name="Shed2" type="Node3D" unique_id=597475210]
+
+[node name="Shed022" parent="." unique_id=1611679757 instance=ExtResource("1_kegry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45455313, 4.7683716e-07, -5.603751)
+
+[node name="Chair012" parent="." unique_id=1940621086 instance=ExtResource("2_yhudh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2140497, 3.0880978, -17.263454)
+
+[node name="Chair013" parent="." unique_id=2143838447 instance=ExtResource("2_yhudh")]
+transform = Transform3D(-0.7830208, 0, 0.6219955, 0, 1, 0, -0.6219955, 0, -0.7830208, -4.4964294, 3.088096, -21.380688)
+
+[node name="Table022" parent="." unique_id=732129867 instance=ExtResource("3_id2tl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4485646, 3.0880973, -18.821472)
+
+[node name="Chair017" parent="." unique_id=1708573301 instance=ExtResource("2_yhudh")]
+transform = Transform3D(-0.9531907, 0, -0.30236995, 0, 1, 0, 0.30236995, 0, -0.9531907, -3.6112747, 3.0880952, -16.839188)
+
+[node name="Chair014" parent="." unique_id=1435215386 instance=ExtResource("2_yhudh")]
+transform = Transform3D(-0.9999805, 0, -0.006248206, 0, 1, 0, 0.006248206, 0, -0.9999805, -7.7399216, 3.0880947, -16.954845)
+
+[node name="Chair015" parent="." unique_id=1252130545 instance=ExtResource("2_yhudh")]
+transform = Transform3D(-0.20234288, 0, 0.97931474, 0, 1, 0, -0.97931474, 0, -0.20234288, -1.1663232, 3.0880957, -22.553709)
+
+[node name="Chair016" parent="." unique_id=1562161816 instance=ExtResource("2_yhudh")]
+transform = Transform3D(0.95021164, 0, 0.3116053, 0, 1, 0, -0.3116053, 0, 0.95021164, 0.12883997, 3.088096, -19.951847)
+
+[node name="Table012" parent="." unique_id=668304053 instance=ExtResource("4_3lmg2")]
+transform = Transform3D(0.81068593, 0, 0.5854813, 0, 1, 0, -0.5854813, 0, 0.81068593, 5.3415256, 3.085703, -21.620111)
+
+[node name="Table023" parent="." unique_id=967114630 instance=ExtResource("3_id2tl")]
+transform = Transform3D(0.92608154, 0, 0.37732363, 0, 1, 0, -0.37732363, 0, 0.92608154, 4.7631254, 3.0052319, 0.96609235)
+
+[node name="Table013" parent="." unique_id=286875611 instance=ExtResource("4_3lmg2")]
+transform = Transform3D(0.71092224, 0, -0.7032706, 0, 1, 0, 0.7032706, 0, 0.71092224, -6.171755, 3.0857003, -7.5706086)
+
+[node name="Bench012" parent="." unique_id=871027516 instance=ExtResource("5_fh0rm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9164553, 3.0857005, -10.317927)
+
+[node name="Chair018" parent="." unique_id=1948790093 instance=ExtResource("2_yhudh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.111318, 3.0880928, -2.1941922)
+
+[node name="Chair019" parent="." unique_id=878054741 instance=ExtResource("2_yhudh")]
+transform = Transform3D(0.18176459, 0.01715957, 0.9831925, 0.01708206, -0.999752, 0.014290598, 0.98319364, 0.014197433, -0.18201262, -5.7129517, 5.727122, -5.526717)
+
+[node name="BadFireplace" parent="." unique_id=795615243 instance=ExtResource("6_u32ps")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3289285, 3.6000957, -13.400999)
+
+[node name="Chair020" parent="." unique_id=522927760 instance=ExtResource("2_yhudh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7087574, 3.0880954, -17.796318)
+
+[node name="Chair021" parent="." unique_id=2069904024 instance=ExtResource("2_yhudh")]
+transform = Transform3D(0.74848145, -6.543432e-08, -0.6631558, -8.7422755e-08, -0.9999999, -1.5561719e-15, -0.66315573, 5.7974916e-08, -0.7484816, -4.7036633, 5.7593293, -8.767333)
+
+[node name="Bench013" parent="." unique_id=1312478296 instance=ExtResource("5_fh0rm")]
+transform = Transform3D(-0.99999857, 0, -0.0016755175, 0, 1, 0, 0.0016755175, 0, -0.99999857, -7.7203507, 3.0857003, 1.2933218)
