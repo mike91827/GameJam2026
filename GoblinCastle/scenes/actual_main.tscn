@@ -74,7 +74,7 @@ message = "I, the great Goblin Mage, have hid my staff to prevent anyone to achi
 [node name="Church" parent="." unique_id=1197276794 instance=ExtResource("11_0eh0j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2252, 2.5227509, 20.000217)
 
-[node name="Shed1" parent="." unique_id=342971424 instance=ExtResource("1_71hdk")]
+[node name="realShed" parent="." unique_id=342971424 instance=ExtResource("1_71hdk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.87569, 3.0587006, -5.1754456)
 
 [node name="Shed2" parent="." unique_id=597475210 instance=ExtResource("10_0eh0j")]

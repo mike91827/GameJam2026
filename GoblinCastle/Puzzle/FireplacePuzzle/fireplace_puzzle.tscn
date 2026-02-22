@@ -3,8 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="1_juel5"]
 [ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="2_8s0m4"]
 [ext_resource type="PackedScene" uid="uid://dwio36efih3q1" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="3_8s0m4"]
-[ext_resource type="PackedScene" uid="uid://dl823qjyrdna" path="res://scenes/altar.tscn" id="4_aiqdg"]
-[ext_resource type="AudioStream" uid="uid://bxp6m5ntfdi88" path="res://assets/audio/Mech Growl.wav" id="5_32vpv"]
+[ext_resource type="PackedScene" uid="uid://csc5pimbhayw0" path="res://scenes/altar.tscn" id="4_aiqdg"]
 
 [node name="FireplacePuzzle" type="Node3D" unique_id=1202501209]
 
@@ -59,4 +58,3 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.6363285, 0)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=757928975]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29764986, 0)
-stream = ExtResource("5_32vpv")
