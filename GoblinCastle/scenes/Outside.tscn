@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://27d233juedne" path="res://scenes/music.gd" id="3_m64sd"]
 [ext_resource type="PackedScene" uid="uid://ds3eelvgujrww" path="res://assets/Models/Shed01.glb" id="3_rn6ye"]
 [ext_resource type="PackedScene" uid="uid://bfeie5ejbdoso" path="res://assets/Models/Shed02.glb" id="4_hfmcr"]
-[ext_resource type="PackedScene" uid="uid://rfoa663dq8kj" path="res://assets/Models/ChurchWhole2.glb" id="5_ppadw"]
 
 [node name="TreeNode" type="Node3D" unique_id=275768923]
 visible = false
@@ -25,8 +24,6 @@ light_color = Color(0.86, 0.86, 0.86, 1)
 
 [node name="Node3D" type="Node3D" parent="." unique_id=589048541]
 
-[node name="Shed012" parent="Node3D" unique_id=1143292671 instance=ExtResource("3_rn6ye")]
+[node name="Shed012" parent="Node3D" unique_id=198869785 instance=ExtResource("3_rn6ye")]
 
-[node name="Shed022" parent="Node3D" unique_id=1695617665 instance=ExtResource("4_hfmcr")]
-
-[node name="ChurchWhole2" parent="Node3D" unique_id=1684750864 instance=ExtResource("5_ppadw")]
+[node name="Shed022" parent="Node3D" unique_id=1611679757 instance=ExtResource("4_hfmcr")]

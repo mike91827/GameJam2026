@@ -13,17 +13,25 @@ GameJam2026/       # GitHub repo name
 └── LICENSE             # maybe we should do this? private / not for re-use except for team members, basically...
 
 ## Credits
-Michael Le (Programming)
-Lander (rover) (Programming)
-Luyao (3D art)
-Chris Hay (ERC) (3D art)
-Michael Roncin (Music)
+🎮 Michael Le (Programming)
+🎮 Lander (rover) (Programming)
+🎨 Luyao (3D art)
+🎨 Chris Hay (ERC) (3D art)
+🎵 Michael Roncin (Music)
 
 ## External assets used
-* https://screamingbrainstudios.itch.io/tiny-texture-pack
-* https://github.com/Brackeys/brackeys-proto-controller
-* https://vurmux.itch.io/urizen-onebit-tileset
-* https://distantlantern.itch.io/allsky-free-godot-edition
-  * (MIT license)
-  * https://github.com/rpgwhitelock/AllSkyFree_Godot
-  * Original creator: http://richardwhitelock.com/ 
+* Textures
+  * https://github.com/Brackeys/brackeys-proto-controller
+  * https://screamingbrainstudios.itch.io/tiny-texture-pack (1 and 2)
+  * https://distantlantern.itch.io/allsky-free-godot-edition ("Moon Burst")
+    * (MIT license)
+    * https://github.com/rpgwhitelock/AllSkyFree_Godot
+    * Original creator's website: http://richardwhitelock.com/ 
+* Sprites
+  * https://vurmux.itch.io/urizen-onebit-tileset
+  * https://manicpixeldreamgirl.itch.io/campfire-new-32px
+* Goblin paintings:
+  * https://camkoalatixd.itch.io/2d-goblin-characters
+  * https://anonstoner.itch.io/2d-green-pixel-dragon
+  * https://plooody.itch.io/goblin-npc
+  * ghost from undertale

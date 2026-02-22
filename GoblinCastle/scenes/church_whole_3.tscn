@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://dq8lh8grhvyia"]
-
-[ext_resource type="PackedScene" uid="uid://cn4xwwxelh88c" path="res://assets/Models/ChurchWhole3.glb" id="1_5mi78"]
-
-[node name="ChurchWhole3" unique_id=1933555128 instance=ExtResource("1_5mi78")]
