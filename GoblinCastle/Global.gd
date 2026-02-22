@@ -23,4 +23,8 @@ func _process(delta: float) -> void:
 			
 	if goingToDie && GTDCounter<=0:
 		get_tree().change_scene_to_file("res://DeathScene/DeathScene.tscn")
+
+	if hasTreasures.all(func(element): return element):
+		hasTreasures = [false,false,false]
+		get_tree().change_scene_to_file("res://scenes/cutscene.tscn")
 	

@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://dj52y00r1k881" path="res://Pathfinding/StandardPathFinding.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://beq827823tgnq" path="res://MichaelPNG/fireplaceMap.png" id="7_o6xl0"]
-[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="10_choun"]
-[ext_resource type="Script" path="res://scripts/fireplace_treasures.gd" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="10_choun"]
+[ext_resource type="Script" uid="uid://bxukp5kd0q71q" path="res://scripts/fireplace_treasures.gd" id="11_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://dj4jigp8qyv6s" path="res://assets/Models/ChurchWhole.glb" id="12_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://ds3eelvgujrww" path="res://assets/Models/Shed01.glb" id="14_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://bfeie5ejbdoso" path="res://assets/Models/Shed02.glb" id="15_jbj1t"]
@@ -19,12 +19,12 @@
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_85g3d"]
 panorama = ExtResource("1_85g3d")
 
-[sub_resource type="Sky" id="Sky_85g3d"]
+[sub_resource type="Sky" id="Sky_jkv2x"]
 sky_material = SubResource("PanoramaSkyMaterial_85g3d")
 
 [sub_resource type="Environment" id="Environment_choun"]
 background_mode = 2
-sky = SubResource("Sky_85g3d")
+sky = SubResource("Sky_jkv2x")
 tonemap_mode = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wfyh"]

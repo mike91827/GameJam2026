@@ -1,19 +1,75 @@
-[gd_scene load_steps=6 format=3 uid="uid://nqef17olugd3"]
+[gd_scene format=3 uid="uid://nqef17olugd3"]
 
-[ext_resource type="PackedScene" uid="uid://dj4jigp8qyv6s" path="res://assets/Models/ChurchWhole.glb" id="1_0vg5q"]
-[ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="2_xrk5n"]
-[ext_resource type="Texture2D" uid="uid://cnshuyl1gvqix" path="res://assets/textures/Stone_08-256x256.png" id="3_h1twl"]
+[ext_resource type="PackedScene" uid="uid://dj4jigp8qyv6s" path="res://assets/Models/ChurchWhole.glb" id="1_bjfr5"]
+[ext_resource type="Texture2D" uid="uid://b607f7dd3iuxu" path="res://assets/textures/Stone_11-256x256.png" id="2_lev6b"]
+[ext_resource type="Texture2D" uid="uid://cnshuyl1gvqix" path="res://assets/textures/Stone_08-256x256.png" id="3_qd77i"]
+[ext_resource type="Texture2D" uid="uid://dmr8bh7lnrurx" path="res://assets/textures/Roofs_08-256x256.png" id="4_as2x8"]
+[ext_resource type="Texture2D" uid="uid://dikxaicbvadyu" path="res://assets/textures/Bricks_23-256x256.png" id="5_6y8yv"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5i0j"]
-albedo_texture = ExtResource("2_xrk5n")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ej62c"]
+albedo_texture = ExtResource("2_lev6b")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbvr1"]
-albedo_texture = ExtResource("3_h1twl")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7iniq"]
+albedo_texture = ExtResource("2_lev6b")
 
-[node name="ChurchWhole" instance=ExtResource("1_0vg5q")]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x10s4"]
+albedo_texture = ExtResource("2_lev6b")
 
-[node name="Castle_Mesh" parent="Church" index="0"]
-material_override = SubResource("StandardMaterial3D_g5i0j")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ro06"]
+albedo_texture = ExtResource("3_qd77i")
 
-[node name="Main" parent="Church/Roof" index="0"]
-material_override = SubResource("StandardMaterial3D_mbvr1")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tfvup"]
+albedo_texture = ExtResource("3_qd77i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d526x"]
+albedo_texture = ExtResource("3_qd77i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ut87"]
+albedo_texture = ExtResource("4_as2x8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gqdtc"]
+albedo_texture = ExtResource("5_6y8yv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vr8a5"]
+albedo_texture = ExtResource("5_6y8yv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2qw1c"]
+albedo_texture = ExtResource("5_6y8yv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6t0qj"]
+albedo_texture = ExtResource("5_6y8yv")
+
+[node name="ChurchWhole" unique_id=1178387360 instance=ExtResource("1_bjfr5")]
+
+[node name="DoorL" parent="Church1/Castle_Mesh" parent_id_path=PackedInt32Array(1136898237) index="1" unique_id=368456552]
+material_override = SubResource("StandardMaterial3D_ej62c")
+
+[node name="DoorR" parent="Church1/Castle_Mesh" parent_id_path=PackedInt32Array(1136898237) index="2" unique_id=1282288307]
+material_override = SubResource("StandardMaterial3D_7iniq")
+
+[node name="ExtStairs" parent="Church1/Castle_Mesh" parent_id_path=PackedInt32Array(1136898237) index="3" unique_id=1973668960]
+material_override = SubResource("StandardMaterial3D_x10s4")
+
+[node name="IntStairs" parent="Church1/Castle_Mesh" parent_id_path=PackedInt32Array(1136898237) index="5" unique_id=580716143]
+material_override = SubResource("StandardMaterial3D_5ro06")
+
+[node name="Pillars" parent="Church1/Castle_Mesh" parent_id_path=PackedInt32Array(1136898237) index="6" unique_id=1036929536]
+material_override = SubResource("StandardMaterial3D_tfvup")
+
+[node name="Wall" parent="Church1/Castle_Mesh" parent_id_path=PackedInt32Array(1136898237) index="7" unique_id=1123050903]
+material_override = SubResource("StandardMaterial3D_d526x")
+
+[node name="Main" parent="Church1/Roof" parent_id_path=PackedInt32Array(1807597977) index="0" unique_id=890806645]
+material_override = SubResource("StandardMaterial3D_7ut87")
+
+[node name="pTorus1" parent="Church1/Roof" parent_id_path=PackedInt32Array(1807597977) index="1" unique_id=855802186]
+material_override = SubResource("StandardMaterial3D_gqdtc")
+
+[node name="pTorus2" parent="Church1/Roof" parent_id_path=PackedInt32Array(1807597977) index="2" unique_id=2131320475]
+material_override = SubResource("StandardMaterial3D_vr8a5")
+
+[node name="pTorus3" parent="Church1/Roof" parent_id_path=PackedInt32Array(1807597977) index="3" unique_id=1222549652]
+material_override = SubResource("StandardMaterial3D_2qw1c")
+
+[node name="pTorus4" parent="Church1/Roof" parent_id_path=PackedInt32Array(1807597977) index="4" unique_id=480221439]
+material_override = SubResource("StandardMaterial3D_6t0qj")
