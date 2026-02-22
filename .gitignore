@@ -18,3 +18,6 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+GoblinCastle/exports/CastleGoblin_v1/index.apple-touch-icon.png.import
+GoblinCastle/exports/CastleGoblin_v1/index.icon.png.import
+GoblinCastle/exports/CastleGoblin_v1/index.png.import
