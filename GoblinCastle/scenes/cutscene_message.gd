@@ -1,6 +1,6 @@
 extends Label3D
 
-@export_multiline var cutscene_message: PackedStringArray = ["Thank you!!!", "You summoned me!!", "THANKS FOR", "PLAYING"]
+@export_multiline var cutscene_message: PackedStringArray = ["Thank you!!!", "You summoned me!!", "THANKS FOR PLAYING", "NOW\nYOU'VE\nSUMMONED", "GOBLIN MODE"]
 @export var timer_interval = 0.3
 
 @onready var ThankYouMessage = $"../ThankYou"

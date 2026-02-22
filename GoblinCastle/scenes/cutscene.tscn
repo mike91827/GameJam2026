@@ -22,6 +22,34 @@ background_mode = 2
 sky = SubResource("Sky_85g3d")
 tonemap_mode = 2
 
+[sub_resource type="Animation" id="Animation_bb0yx"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156)
+
+[sub_resource type="Animation" id="Animation_3ptll"]
+resource_name = "cutscene"
+length = 2.0
+step = 1.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156, 2, 1, 76.3637, 32.74843, -121.80845)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d18fx"]
+_data = {
+&"RESET": SubResource("Animation_bb0yx"),
+&"cutscene": SubResource("Animation_3ptll")
+}
+
 [node name="Node3D" type="Node3D" unique_id=1572862609]
 
 [node name="ChurchWhole" parent="." unique_id=1178387360 instance=ExtResource("1_edmg7")]
@@ -40,7 +68,7 @@ shadow_enabled = true
 directional_shadow_max_distance = 1.0
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=440396088]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.3637, 32.74843, -118.681175)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.3637, 32.74843, -82.591156)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2095475552]
 environment = SubResource("Environment_75brc")
@@ -51,14 +79,15 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 80.4078, 20.989836, -171.6
 [node name="CutsceneMessage" type="Label3D" parent="." unique_id=2115007416]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.12317, 35.013874, -136.08618)
 modulate = Color(0.14399998, 0.48, 0, 1)
-font_size = 800
+font_size = 700
 script = ExtResource("5_fs8wb")
 
 [node name="ThankYou" type="Label3D" parent="." unique_id=1968626597]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.123, 35.014, -137.3151)
 visible = false
 modulate = Color(0.14399998, 0.48, 0, 1)
-text = "THANKS FOR PLAYING"
+text = "THANKS FOR 
+PLAYING"
 font_size = 800
 
 [node name="Button" type="Button" parent="." unique_id=1082360041]
@@ -76,5 +105,9 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 48
 text = "PLAY AGAIN"
 script = ExtResource("6_bb0yx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=53031679]
+libraries/ = SubResource("AnimationLibrary_d18fx")
+autoplay = &"cutscene"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
