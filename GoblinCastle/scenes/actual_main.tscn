@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://b1yyc8ml6sfc" path="res://church.tscn" id="11_0eh0j"]
 [ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="11_71hdk"]
-[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="12_0eh0j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0eh0j"]
 albedo_texture = ExtResource("5_dhkuc")
