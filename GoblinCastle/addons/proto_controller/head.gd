@@ -40,6 +40,7 @@ func _process(delta: float) -> void:
 	if Global.fakeDeath && Global.GTDCounter <= 0:
 		$"../GoingToDie".visible = false
 		get_parent().puzzle_manager.fireplace_puzzle_solved.emit()
+		$"../AudioStreamPlayer3D".play()
 
 
 	

@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://dh3b6vmk8ibc6" path="res://Buildings/Shed1.tscn" id="11_0eh0j"]
 [ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="11_71hdk"]
+[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="12_0eh0j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0eh0j"]
 albedo_texture = ExtResource("5_dhkuc")
@@ -74,7 +75,7 @@ message = "Tip 3: Do not be afraid of ghosts, you can just walk past them"
 
 [node name="CautionFireSign" parent="." unique_id=1549557981 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -62, 2, 103)
-message = "Caution: If you stand in bright fire for too long, you will burn up and be sent to your doom"
+message = "Caution: If you stand in bright fire for too long, you will burn up and die (don't worry, you will respawn)"
 
 [node name="MageStaffSign" parent="." unique_id=2047244480 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -138, 2, -8)
@@ -86,5 +87,7 @@ message = "I, the great Goblin Mage, have hid my staff to prevent anyone to achi
 
 [node name="Shed1" parent="." unique_id=342971424 instance=ExtResource("11_0eh0j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 116.52632)
+
+[node name="music" parent="." unique_id=1653993637 instance=ExtResource("12_0eh0j")]
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplacePuzzle" method="_on_puzzle_manager_fireplace_puzzle_solved"]
