@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bgm4p8kb0ifua" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="Script" uid="uid://chlt3sja6e4lh" path="res://addons/proto_controller/head.gd" id="2_wr06p"]
-[ext_resource type="AudioStream" uid="uid://bxp6m5ntfdi88" path="res://assets/audio/Mech Growl.wav" id="3_5hfox"]
 [ext_resource type="FontFile" uid="uid://b38wuv5pqoiml" path="res://addons/proto_controller/Final-Fantasy.ttf" id="3_6dqce"]
+[ext_resource type="AudioStream" uid="uid://biotou42coiqi" path="res://assets/audio/sfx_treasures_on_altarl.wav" id="4_6dqce"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -73,4 +73,4 @@ font_size = 56
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1174766401]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29764986, 0)
-stream = ExtResource("3_5hfox")
+stream = ExtResource("4_6dqce")
