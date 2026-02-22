@@ -4,11 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="2_ce1d6"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="2_rcu85"]
 [ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
-[ext_resource type="PackedScene" uid="uid://d2vwtip8a245s" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
+[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
 [ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
-[ext_resource type="PackedScene" path="res://bench1.tscn" id="7_6f434"]
-[ext_resource type="PackedScene" path="res://bench2.tscn" id="8_7u5lq"]
+[ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="7_6f434"]
+[ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="8_7u5lq"]
 [ext_resource type="PackedScene" uid="uid://bktuvfa5c3dmg" path="res://wall.tscn" id="9_7u5lq"]
+[ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="10_5se3q"]
 
 [node name="Church" type="Node3D" unique_id=1197276794]
 
@@ -128,6 +129,7 @@ transform = Transform3D(-4.371139e-08, -21.940165, 0, 1, -9.59035e-07, 0, 0, 0, 
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Room" unique_id=1121845611]
 transform = Transform3D(21.60533, 0, 0, 0, 12.425504, 0, 0, 0, 1, 21.029675, 8.132978, -31.211279)
+use_collision = true
 size = Vector3(1, 0.8334961, 1)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Room/CSGBox3D" unique_id=836843082]
@@ -137,4 +139,8 @@ size = Vector3(1, 0.8334961, 1)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Room" unique_id=87256670]
 transform = Transform3D(21.60533, 0, 0, 0, 12.425504, 0, 0, 0, 1, -30.460272, 8.132978, -31.211279)
+use_collision = true
 size = Vector3(1, 0.8334961, 1)
+
+[node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("10_5se3q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.17988)
