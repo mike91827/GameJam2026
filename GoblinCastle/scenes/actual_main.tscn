@@ -58,15 +58,15 @@ temp_field = 69
 
 [node name="SignTip1" parent="." unique_id=26792815 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 2, 159)
-message = "Tip 1: Collect all 3 goblin treasures and bring them to the altar in the church"
+message = "Tip 1: Collect all 3 Goblin treasures and bring them to the altar in the church"
 
 [node name="SignTip2" parent="." unique_id=1064519625 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8, 2, 147)
-message = "Tip 2: If holding an object, press \"R\" to drop it. Hold Shift to Sprint"
+message = "Tip 2: If holding an object, press \"R\" to drop it. Hold Shift to Sprint. Press Space to Jump (may need to jump up stairs)"
 
 [node name="SignTip3" parent="." unique_id=1799768367 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 21, 2, 153)
-message = "Tip 3: Do not be afraid of ghosts, you can just walk past them"
+message = "Tip 3: Do not be afraid of Ghosts, you can just walk past them"
 
 [node name="CautionFireSign" parent="." unique_id=1549557981 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -62, 2, 103)
@@ -77,7 +77,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -138, 2, -8)
 message = "It's not the heat that kills you, it is the glow"
 
 [node name="MageStaffSign2" parent="." unique_id=1512910518 instance=ExtResource("7_l2ck8")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 29, 2, 129)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -71.19228, 2, 108.04228)
 message = "I, the great Goblin Mage, have hid my staff to prevent anyone to achieve Goblin mode ever again. It will only be unlocked when someone embraces my non-dangerous flame"
 
 [node name="Church" parent="." unique_id=1197276794 instance=ExtResource("11_0eh0j")]

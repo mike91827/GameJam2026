@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bgm4p8kb0ifua" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="Script" uid="uid://chlt3sja6e4lh" path="res://addons/proto_controller/head.gd" id="2_wr06p"]
 [ext_resource type="AudioStream" uid="uid://bxp6m5ntfdi88" path="res://assets/audio/Mech Growl.wav" id="3_5hfox"]
+[ext_resource type="FontFile" uid="uid://b38wuv5pqoiml" path="res://addons/proto_controller/Final-Fantasy.ttf" id="3_6dqce"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -18,6 +19,9 @@ height = 1.8
 [node name="ProtoController" type="CharacterBody3D" unique_id=1852022705]
 script = ExtResource("1_ucva2")
 can_sprint = true
+base_speed = 4.0
+jump_velocity = 6.0
+sprint_speed = 7.0
 input_left = "moveLeft"
 input_right = "moveRight"
 input_forward = "moveUp"
@@ -57,6 +61,7 @@ text = "Press To Pick Up"
 [node name="SignMessage" type="Label3D" parent="." unique_id=2002335991]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.618304, -1.149249)
 visible = false
+font = ExtResource("3_6dqce")
 autowrap_mode = 2
 
 [node name="GoingToDie" type="Label3D" parent="." unique_id=191480543]
