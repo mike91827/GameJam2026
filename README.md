@@ -35,3 +35,5 @@ GameJam2026/       # GitHub repo name
   * https://anonstoner.itch.io/2d-green-pixel-dragon
   * https://plooody.itch.io/goblin-npc
   * ghost from undertale
+ * Fonts:
+   * https://www.dafont.com/final-fantasy2.font
