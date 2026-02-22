@@ -7,12 +7,14 @@
 [ext_resource type="Script" uid="uid://cp7m5sfrb70mi" path="res://scenes/cutscene_message.gd" id="5_fs8wb"]
 [ext_resource type="Script" uid="uid://bhohjluoi2xwh" path="res://DeathScene/button.gd" id="6_bb0yx"]
 [ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="7_8qop0"]
+[ext_resource type="Texture2D" uid="uid://dh24ck8n75o5r" path="res://assets/sprites/sprite_torch_green.png" id="7_mu2gi"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="8_mu2gi"]
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="9_c7dhu"]
 [ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="10_qthij"]
-[ext_resource type="PackedScene" path="res://bench1.tscn" id="13_f3v4i"]
+[ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="13_f3v4i"]
 [ext_resource type="Texture2D" uid="uid://c8fy2litb1xks" path="res://assets/sprites/sprite_torch.png" id="13_mu2gi"]
-[ext_resource type="PackedScene" path="res://bench2.tscn" id="14_tvcxb"]
+[ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="14_tvcxb"]
+[ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="15_8qop0"]
 [ext_resource type="PackedScene" uid="uid://bktuvfa5c3dmg" path="res://wall.tscn" id="15_bcuqd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ptll"]
@@ -39,10 +41,154 @@ tracks/0/path = NodePath("Camera3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Church/Torches/Torch4/LightRed:light_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Church/Torches/Torch5/LightRed:light_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Church/Torches/Torch6/LightRed:light_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Church/Torches/Torch7/LightRed:light_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Church/Torches/Torch8/LightRed:light_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Church/Torches/Torch9/LightRed:light_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Church/Torches/Torch4/RedTorch:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Church/Torches/Torch5/RedTorch:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Church/Torches/Torch6/RedTorch:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Church/Torches/Torch7/RedTorch:texture")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Church/Torches/Torch8/RedTorch:texture")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Church/Torches/Torch9/RedTorch:texture")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
 
 [sub_resource type="Animation" id="Animation_3ptll"]
 resource_name = "cutscene"
-length = 2.0
+length = 30.0
 step = 1.0
 tracks/0/type = "position_3d"
 tracks/0/imported = false
@@ -51,6 +197,150 @@ tracks/0/path = NodePath("Camera3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, -7.4428177, 32.74843, 48.741127, 2, 1, -7.4428177, 32.74843, 14.263062)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Church/Torches/Torch4/LightRed:light_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Church/Torches/Torch5/LightRed:light_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Church/Torches/Torch6/LightRed:light_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Church/Torches/Torch7/LightRed:light_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Church/Torches/Torch8/LightRed:light_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Church/Torches/Torch9/LightRed:light_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Church/Torches/Torch4/RedTorch:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Church/Torches/Torch5/RedTorch:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Church/Torches/Torch6/RedTorch:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Church/Torches/Torch7/RedTorch:texture")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Church/Torches/Torch8/RedTorch:texture")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Church/Torches/Torch9/RedTorch:texture")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d18fx"]
 _data = {
@@ -92,7 +382,6 @@ script = ExtResource("5_fs8wb")
 [node name="ThankYou" type="Label3D" parent="." unique_id=1968626597]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.443115, 44.185562, -22.278412)
 visible = false
-modulate = Color(0.14399998, 0.48, 0, 1)
 text = "THANKS FOR 
 PLAYING"
 font = ExtResource("4_3ptll")
@@ -146,7 +435,7 @@ omni_attenuation = 2.0
 [node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch4" unique_id=659384926]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 texture_filter = 0
-texture = ExtResource("13_mu2gi")
+texture = ExtResource("7_mu2gi")
 
 [node name="Torch5" type="Node3D" parent="Church/Torches" unique_id=23190434]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, 31.868168)
@@ -160,7 +449,7 @@ omni_attenuation = 2.0
 [node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch5" unique_id=1890682642]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 texture_filter = 0
-texture = ExtResource("13_mu2gi")
+texture = ExtResource("7_mu2gi")
 
 [node name="Torch6" type="Node3D" parent="Church/Torches" unique_id=1777793110]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, -39.535603)
@@ -174,7 +463,7 @@ omni_attenuation = 2.0
 [node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch6" unique_id=679271679]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 texture_filter = 0
-texture = ExtResource("13_mu2gi")
+texture = ExtResource("7_mu2gi")
 
 [node name="Torch7" type="Node3D" parent="Church/Torches" unique_id=509450996]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -39.535603)
@@ -189,7 +478,7 @@ omni_attenuation = 2.0
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 flip_h = true
 texture_filter = 0
-texture = ExtResource("13_mu2gi")
+texture = ExtResource("7_mu2gi")
 
 [node name="Torch8" type="Node3D" parent="Church/Torches" unique_id=763026405]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -4.2183)
@@ -204,7 +493,7 @@ omni_attenuation = 2.0
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 flip_h = true
 texture_filter = 0
-texture = ExtResource("13_mu2gi")
+texture = ExtResource("7_mu2gi")
 
 [node name="Torch9" type="Node3D" parent="Church/Torches" unique_id=1076688989]
 transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, 32.879036)
@@ -219,7 +508,7 @@ omni_attenuation = 2.0
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 flip_h = true
 texture_filter = 0
-texture = ExtResource("13_mu2gi")
+texture = ExtResource("7_mu2gi")
 
 [node name="Benches" type="Node3D" parent="Church" unique_id=1814905734]
 
@@ -315,5 +604,8 @@ size = Vector3(1, 0.8334961, 1)
 [node name="CSGBox3D2" type="CSGBox3D" parent="Church/Room" unique_id=1078805270]
 transform = Transform3D(21.60533, 0, 0, 0, 12.425504, 0, 0, 0, 1, -30.460272, 8.132978, -31.211279)
 size = Vector3(1, 0.8334961, 1)
+
+[node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("15_8qop0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.17988)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
