@@ -21,3 +21,7 @@ mono_crash.*.json
 GoblinCastle/exports/CastleGoblin_v1/index.apple-touch-icon.png.import
 GoblinCastle/exports/CastleGoblin_v1/index.icon.png.import
 GoblinCastle/exports/CastleGoblin_v1/index.png.import
+GoblinCastle/assets/audio/Goblin Castle Intro V5.ogg.import
+GoblinCastle/assets/audio/sfx_cutscene_bothsoundsl.wav.import
+GoblinCastle/assets/audio/sfx_goblin_mode_green.wav.import
+GoblinCastle/assets/audio/sfx_treasures_on_altarl.wav.import

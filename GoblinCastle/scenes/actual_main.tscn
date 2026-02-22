@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://dh3b6vmk8ibc6" path="res://Buildings/Shed1.tscn" id="1_71hdk"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
-[ext_resource type="PackedScene" uid="uid://boqjct1oyq8x8" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
+[ext_resource type="PackedScene" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
-[ext_resource type="PackedScene" uid="uid://dhj3y0pophuxt" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
+[ext_resource type="PackedScene" uid="uid://cralbkilrt1ek" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
 [ext_resource type="Script" uid="uid://dhbtk83rvo1x4" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
-[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
+[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" path="res://Buildings/Shed2.tscn" id="10_0eh0j"]
 [ext_resource type="PackedScene" uid="uid://b1yyc8ml6sfc" path="res://church.tscn" id="11_0eh0j"]
@@ -88,5 +88,17 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.726597, 7.255224, 74.
 texture = ExtResource("12_0eh0j")
 
 [node name="music" parent="." unique_id=1653993637 instance=ExtResource("13_qidpy")]
+
+[node name="Bounds" type="CSGCylinder3D" parent="." unique_id=378769749]
+transform = Transform3D(480.00003, 0, 0, 0, 220, 0, 0, 0, 400, 0, 95.8, 0)
+visible = false
+use_collision = true
+height = 1.5
+
+[node name="InnerBoundsErased" type="CSGCylinder3D" parent="Bounds" unique_id=1623432169]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+operation = 2
+use_collision = true
+height = 1.5
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplacePuzzle" method="_on_puzzle_manager_fireplace_puzzle_solved"]

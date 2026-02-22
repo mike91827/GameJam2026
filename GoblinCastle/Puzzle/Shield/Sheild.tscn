@@ -13,6 +13,7 @@ radius = 0.06576222
 [node name="Area3D" type="Area3D" parent="." unique_id=1710295846 groups=["Pickable"]]
 
 [node name="Sprite3D" type="Sprite3D" parent="Area3D" unique_id=1165168631]
+texture_filter = 0
 texture = ExtResource("1_dg7sk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=886300542]
