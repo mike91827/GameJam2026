@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="2_ce1d6"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="2_rcu85"]
 [ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
-[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
+[ext_resource type="PackedScene" uid="uid://d2vwtip8a245s" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
 [ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
 [ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="7_6f434"]
 [ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="8_7u5lq"]
