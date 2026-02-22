@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d2vwtip8a245s"]
+
+[ext_resource type="Texture2D" uid="uid://b7w8qpsnrvmcc" path="res://MichaelPNG/MichaelPainting.png" id="1_885w2"]
+
+[node name="MichaelPainting" type="Node3D" unique_id=538631061]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=716852505]
+texture = ExtResource("1_885w2")

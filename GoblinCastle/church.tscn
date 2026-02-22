@@ -1,13 +1,25 @@
 [gd_scene format=3 uid="uid://b1yyc8ml6sfc"]
 
 [ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="1_1kxs5"]
+[ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="2_ce1d6"]
+[ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="2_rcu85"]
 [ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
+[ext_resource type="PackedScene" uid="uid://d2vwtip8a245s" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
 [ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
 
 [node name="Church" type="Node3D" unique_id=1197276794]
 
 [node name="ChurchWhole2" parent="." unique_id=1684750864 instance=ExtResource("1_1kxs5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.55581, 7.6293945e-06, 133.94702)
+
+[node name="GoblinSquattingPicture" parent="ChurchWhole2" unique_id=1270292460 instance=ExtResource("2_rcu85")]
+transform = Transform3D(-3.059797e-07, 0, 7, 0, 7, 0, -7, 0, -3.059797e-07, 116, 40, -128)
+
+[node name="DragonPicture" parent="ChurchWhole2" unique_id=1391384337 instance=ExtResource("2_ce1d6")]
+transform = Transform3D(-2.6222e-07, 6.7131745e-09, 5, 0.11518465, 7.9985256, -1.01616716e-16, -5.998894, 0.15357953, -2.1855695e-07, 43.952667, 28.05115, -119.752014)
+
+[node name="MichaelPainting" parent="ChurchWhole2" unique_id=538631061 instance=ExtResource("3_m8tyq")]
+transform = Transform3D(5.962441e-08, 0, -5, 0, 5, 0, 5, 0, 5.962441e-08, 116.783424, 12.203758, -96.7418)
 
 [node name="Torches" type="Node3D" parent="." unique_id=1130759126]
 
