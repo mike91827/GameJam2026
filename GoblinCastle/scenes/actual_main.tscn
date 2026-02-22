@@ -1,15 +1,18 @@
 [gd_scene format=3 uid="uid://dreo2nv47ka8d"]
 
+[ext_resource type="PackedScene" uid="uid://dh3b6vmk8ibc6" path="res://Buildings/Shed1.tscn" id="1_71hdk"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
-[ext_resource type="PackedScene" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
+[ext_resource type="PackedScene" uid="uid://boqjct1oyq8x8" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://ct52bhcy2pxs7" path="res://scenes/shed_01.tscn" id="4_0eh0j"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
-[ext_resource type="PackedScene" uid="uid://cralbkilrt1ek" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
+[ext_resource type="PackedScene" uid="uid://dhj3y0pophuxt" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
 [ext_resource type="PackedScene" uid="uid://d1cft804uu4b0" path="res://scenes/shed_02.tscn" id="5_qidpy"]
 [ext_resource type="Script" uid="uid://dhbtk83rvo1x4" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
-[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
+[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://b1yyc8ml6sfc" path="res://church.tscn" id="11_0eh0j"]
+[ext_resource type="Texture2D" uid="uid://biaa47y4nk1h4" path="res://MichaelPNG/completedCabinMap.png" id="12_0eh0j"]
+[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="13_qidpy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0eh0j"]
 albedo_texture = ExtResource("5_dhkuc")
@@ -82,5 +85,14 @@ message = "I, the great Goblin Mage, have hid my staff to prevent anyone to achi
 
 [node name="Church" parent="." unique_id=1197276794 instance=ExtResource("11_0eh0j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2252, 2.5227509, 20.000217)
+
+[node name="Shed1" parent="." unique_id=342971424 instance=ExtResource("1_71hdk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 2, 105)
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1918384987]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.726597, 7.255224, 74.974144)
+texture = ExtResource("12_0eh0j")
+
+[node name="music" parent="." unique_id=1653993637 instance=ExtResource("13_qidpy")]
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplacePuzzle" method="_on_puzzle_manager_fireplace_puzzle_solved"]

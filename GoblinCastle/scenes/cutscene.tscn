@@ -1,11 +1,24 @@
 [gd_scene format=3 uid="uid://bb0fkfwatu6r7"]
 
-[ext_resource type="PackedScene" uid="uid://nqef17olugd3" path="res://scenes/church_whole.tscn" id="1_edmg7"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="2_2bm7f"]
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="3_fs8wb"]
+[ext_resource type="FontFile" uid="uid://b38wuv5pqoiml" path="res://addons/proto_controller/Final-Fantasy.ttf" id="4_3ptll"]
 [ext_resource type="PackedScene" uid="uid://cnfs2t28ub4tw" path="res://Characters/GoblinQueen/GoblinQueen.tscn" id="4_bb0yx"]
 [ext_resource type="Script" uid="uid://cp7m5sfrb70mi" path="res://scenes/cutscene_message.gd" id="5_fs8wb"]
 [ext_resource type="Script" uid="uid://bhohjluoi2xwh" path="res://DeathScene/button.gd" id="6_bb0yx"]
+[ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="7_8qop0"]
+[ext_resource type="Texture2D" uid="uid://dh24ck8n75o5r" path="res://assets/sprites/sprite_torch_green.png" id="7_mu2gi"]
+[ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="8_mu2gi"]
+[ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="9_c7dhu"]
+[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="10_qthij"]
+[ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="13_f3v4i"]
+[ext_resource type="Texture2D" uid="uid://c8fy2litb1xks" path="res://assets/sprites/sprite_torch.png" id="13_mu2gi"]
+[ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="14_tvcxb"]
+[ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="15_8qop0"]
+[ext_resource type="PackedScene" uid="uid://bktuvfa5c3dmg" path="res://wall.tscn" id="15_bcuqd"]
+[ext_resource type="Texture2D" uid="uid://dnx2n3dx5nop5" path="res://assets/sprites/sprite_dagger.png" id="17_er82a"]
+[ext_resource type="Texture2D" uid="uid://bmo55xg7nx1bv" path="res://assets/sprites/sprite_firestaff.png" id="18_40a5i"]
+[ext_resource type="Texture2D" uid="uid://c807rimwnlmn5" path="res://assets/sprites/sprite_shield.png" id="19_f3v4i"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ptll"]
 albedo_texture = ExtResource("2_2bm7f")
@@ -31,10 +44,154 @@ tracks/0/path = NodePath("Camera3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Church/Torches/Torch4/LightRed:light_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Church/Torches/Torch5/LightRed:light_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Church/Torches/Torch6/LightRed:light_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Church/Torches/Torch7/LightRed:light_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Church/Torches/Torch8/LightRed:light_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Church/Torches/Torch9/LightRed:light_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Church/Torches/Torch4/RedTorch:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Church/Torches/Torch5/RedTorch:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Church/Torches/Torch6/RedTorch:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Church/Torches/Torch7/RedTorch:texture")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Church/Torches/Torch8/RedTorch:texture")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Church/Torches/Torch9/RedTorch:texture")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_mu2gi")]
+}
 
 [sub_resource type="Animation" id="Animation_3ptll"]
 resource_name = "cutscene"
-length = 2.0
+length = 30.0
 step = 1.0
 tracks/0/type = "position_3d"
 tracks/0/imported = false
@@ -42,7 +199,151 @@ tracks/0/enabled = true
 tracks/0/path = NodePath("Camera3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 76.3637, 32.74843, -82.591156, 2, 1, 76.3637, 32.74843, -121.80845)
+tracks/0/keys = PackedFloat32Array(0, 1, -7.4428177, 32.74843, 48.741127, 2, 1, -7.4428177, 32.74843, 14.263062)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Church/Torches/Torch4/LightRed:light_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Church/Torches/Torch5/LightRed:light_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Church/Torches/Torch6/LightRed:light_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Church/Torches/Torch7/LightRed:light_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Church/Torches/Torch8/LightRed:light_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Church/Torches/Torch9/LightRed:light_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(22, 24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99, 0.52800006, 0, 1), Color(0, 0.9882353, 0.09803922, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Church/Torches/Torch4/RedTorch:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Church/Torches/Torch5/RedTorch:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Church/Torches/Torch6/RedTorch:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Church/Torches/Torch7/RedTorch:texture")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Church/Torches/Torch8/RedTorch:texture")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Church/Torches/Torch9/RedTorch:texture")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 23),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_mu2gi"), ExtResource("7_mu2gi")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d18fx"]
 _data = {
@@ -51,8 +352,6 @@ _data = {
 }
 
 [node name="Node3D" type="Node3D" unique_id=1572862609]
-
-[node name="ChurchWhole" parent="." unique_id=1178387360 instance=ExtResource("1_edmg7")]
 
 [node name="Floor" type="CSGBox3D" parent="." unique_id=1188679969]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94914186, 0.18006516, -0.39958242)
@@ -74,20 +373,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.3637, 32.74843, -82.591156
 environment = SubResource("Environment_75brc")
 
 [node name="GoblinQueen" parent="." unique_id=51542128 instance=ExtResource("4_bb0yx")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 80.4078, 20.989836, -171.60765)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -6.5891647, 36.195843, -52.68228)
 
 [node name="CutsceneMessage" type="Label3D" parent="." unique_id=2115007416]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.12317, 35.013874, -136.08618)
-modulate = Color(0.14399998, 0.48, 0, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.220299, 53.60175, -52.168686)
+modulate = Color(0.20699997, 0.69, 0, 1)
+font = ExtResource("4_3ptll")
 font_size = 700
 script = ExtResource("5_fs8wb")
 
 [node name="ThankYou" type="Label3D" parent="." unique_id=1968626597]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.123, 35.014, -137.3151)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.443115, 44.185562, -22.278412)
 visible = false
-modulate = Color(0.14399998, 0.48, 0, 1)
 text = "THANKS FOR 
 PLAYING"
+font = ExtResource("4_3ptll")
 font_size = 800
 
 [node name="Button" type="Button" parent="." unique_id=1082360041]
@@ -109,5 +409,229 @@ script = ExtResource("6_bb0yx")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=53031679]
 libraries/ = SubResource("AnimationLibrary_d18fx")
 autoplay = &"cutscene"
+
+[node name="Church" type="Node3D" parent="." unique_id=293150956]
+
+[node name="ChurchWhole2" parent="Church" unique_id=1684750864 instance=ExtResource("7_8qop0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.55581, 7.6293945e-06, 133.94702)
+
+[node name="GoblinSquattingPicture" parent="Church/ChurchWhole2" unique_id=1270292460 instance=ExtResource("8_mu2gi")]
+transform = Transform3D(-3.059797e-07, 0, 7, 0, 7, 0, -7, 0, -3.059797e-07, 116, 40, -128)
+
+[node name="DragonPicture" parent="Church/ChurchWhole2" unique_id=1391384337 instance=ExtResource("9_c7dhu")]
+transform = Transform3D(-2.6222e-07, 6.7131745e-09, 5, 0.11518465, 7.9985256, -1.01616716e-16, -5.998894, 0.15357953, -2.1855695e-07, 43.952667, 28.05115, -119.752014)
+
+[node name="MichaelPainting" parent="Church/ChurchWhole2" unique_id=538631061 instance=ExtResource("10_qthij")]
+transform = Transform3D(5.962441e-08, 0, -5, 0, 5, 0, 5, 0, 5.962441e-08, 116.783424, 12.203758, -96.7418)
+
+[node name="Torches" type="Node3D" parent="Church" unique_id=1682778665]
+
+[node name="Torch4" type="Node3D" parent="Church/Torches" unique_id=1109099947]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, -4.3467636)
+
+[node name="LightRed" type="OmniLight3D" parent="Church/Torches/Torch4" unique_id=199512001]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch4" unique_id=659384926]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("7_mu2gi")
+
+[node name="Torch5" type="Node3D" parent="Church/Torches" unique_id=23190434]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, 31.868168)
+
+[node name="LightRed" type="OmniLight3D" parent="Church/Torches/Torch5" unique_id=809825984]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch5" unique_id=1890682642]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("7_mu2gi")
+
+[node name="Torch6" type="Node3D" parent="Church/Torches" unique_id=1777793110]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, -39.535603)
+
+[node name="LightRed" type="OmniLight3D" parent="Church/Torches/Torch6" unique_id=1882999334]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch6" unique_id=679271679]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("7_mu2gi")
+
+[node name="Torch7" type="Node3D" parent="Church/Torches" unique_id=509450996]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -39.535603)
+
+[node name="LightRed" type="OmniLight3D" parent="Church/Torches/Torch7" unique_id=1667466305]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch7" unique_id=124192415]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+flip_h = true
+texture_filter = 0
+texture = ExtResource("7_mu2gi")
+
+[node name="Torch8" type="Node3D" parent="Church/Torches" unique_id=763026405]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -4.2183)
+
+[node name="LightRed" type="OmniLight3D" parent="Church/Torches/Torch8" unique_id=366596602]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch8" unique_id=1395649060]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+flip_h = true
+texture_filter = 0
+texture = ExtResource("7_mu2gi")
+
+[node name="Torch9" type="Node3D" parent="Church/Torches" unique_id=1076688989]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, 32.879036)
+
+[node name="LightRed" type="OmniLight3D" parent="Church/Torches/Torch9" unique_id=479152031]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="Church/Torches/Torch9" unique_id=723421514]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+flip_h = true
+texture_filter = 0
+texture = ExtResource("7_mu2gi")
+
+[node name="Benches" type="Node3D" parent="Church" unique_id=1814905734]
+
+[node name="Bench002" parent="Church/Benches" unique_id=811759771 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 41.025734)
+
+[node name="Bench003" parent="Church/Benches" unique_id=456969843 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 41.025734)
+
+[node name="Bench004" parent="Church/Benches" unique_id=936247216 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 32.34237)
+
+[node name="Bench005" parent="Church/Benches" unique_id=1426992546 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 32.34237)
+
+[node name="Bench006" parent="Church/Benches" unique_id=1981853648 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 21.805382)
+
+[node name="Bench007" parent="Church/Benches" unique_id=1009511129 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 21.805382)
+
+[node name="Bench008" parent="Church/Benches" unique_id=2017619943 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 11.703255)
+
+[node name="Bench009" parent="Church/Benches" unique_id=5328710 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 11.703255)
+
+[node name="Bench010" parent="Church/Benches" unique_id=1783755780 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 16.156271, 1.3, 1.0322142)
+
+[node name="Bench011" parent="Church/Benches" unique_id=990808485 instance=ExtResource("13_f3v4i")]
+transform = Transform3D(1, 0, 0, 0, 1.4, 0, 0, 0, 1.2, -25.577051, 1.3, 1.0322142)
+
+[node name="Bench012" parent="Church/Benches" unique_id=871027516 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 5.3491774, 1.3, -6.6457386)
+
+[node name="Bench013" parent="Church/Benches" unique_id=1580065810 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 15.71267, 1.3, -6.6457386)
+
+[node name="Bench014" parent="Church/Benches" unique_id=1377413287 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 26.61935, 1.3, -6.6457386)
+
+[node name="Bench015" parent="Church/Benches" unique_id=1234058235 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 5.3491774, 1.3, -13.292742)
+
+[node name="Bench016" parent="Church/Benches" unique_id=1666336912 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 15.71267, 1.3, -13.292742)
+
+[node name="Bench017" parent="Church/Benches" unique_id=907559691 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, 26.61935, 1.3, -13.292742)
+
+[node name="Bench018" parent="Church/Benches" unique_id=896854227 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -35.991875, 1.3, -6.6457386)
+
+[node name="Bench019" parent="Church/Benches" unique_id=1477216949 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -25.628384, 1.3, -6.6457386)
+
+[node name="Bench020" parent="Church/Benches" unique_id=40625215 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -14.721703, 1.3, -6.6457386)
+
+[node name="Bench021" parent="Church/Benches" unique_id=1548227768 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -35.991875, 1.3, -13.292742)
+
+[node name="Bench022" parent="Church/Benches" unique_id=1242311450 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -25.628384, 1.3, -13.292742)
+
+[node name="Bench023" parent="Church/Benches" unique_id=996269009 instance=ExtResource("14_tvcxb")]
+transform = Transform3D(-4.371139e-08, 0, -1.2, 0, 1.4, 0, 1, 0, -5.2453668e-08, -14.721703, 1.3, -13.292742)
+
+[node name="Room" type="Node3D" parent="Church" unique_id=513473152]
+
+[node name="Wall" parent="Church/Room" unique_id=1254949730 instance=ExtResource("15_bcuqd")]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 25.792305, -20, 8.285, -44.21686)
+
+[node name="Wall2" parent="Church/Room" unique_id=130195700 instance=ExtResource("15_bcuqd")]
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 25, 10.566504, 8.285, -43.376)
+
+[node name="Wall5" parent="Church/Room" unique_id=2043034769 instance=ExtResource("15_bcuqd")]
+transform = Transform3D(-4.371139e-08, -21.940165, 0, 1, -9.59035e-07, 0, 0, 0, 26.142347, -30.680368, 12.937021, -44.252285)
+
+[node name="Wall6" parent="Church/Room" unique_id=411087510 instance=ExtResource("15_bcuqd")]
+transform = Transform3D(-4.371139e-08, -21.940165, 0, 1, -9.59035e-07, 0, 0, 0, 26.142347, 21.126802, 12.937021, -44.252285)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Church/Room" unique_id=928538197]
+transform = Transform3D(21.60533, 0, 0, 0, 12.425504, 0, 0, 0, 1, 21.029675, 8.132978, -31.211279)
+size = Vector3(1, 0.8334961, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Church/Room/CSGBox3D" unique_id=1800471536]
+transform = Transform3D(0.28762048, 0, 0, 0, 0.5732942, 0, 0, 0, 1.5919816, 0, -0.08537775, 0)
+operation = 2
+size = Vector3(1, 0.8334961, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Church/Room" unique_id=1078805270]
+transform = Transform3D(21.60533, 0, 0, 0, 12.425504, 0, 0, 0, 1, -30.460272, 8.132978, -31.211279)
+size = Vector3(1, 0.8334961, 1)
+
+[node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("15_8qop0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.17988)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1862385995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 5.6141624, -41.17988)
+
+[node name="Dagger" type="Sprite3D" parent="Node3D" unique_id=116553993]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.5, 0, -1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("17_er82a")
+
+[node name="Mage" type="Sprite3D" parent="Node3D" unique_id=1058889211]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("18_40a5i")
+
+[node name="Shield" type="Sprite3D" parent="Node3D" unique_id=45890239]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -2.5, 0, -1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("19_f3v4i")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1520431606]
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
