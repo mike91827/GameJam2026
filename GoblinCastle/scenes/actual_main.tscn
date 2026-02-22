@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://dreo2nv47ka8d"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
-[ext_resource type="PackedScene" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
+[ext_resource type="PackedScene" uid="uid://boqjct1oyq8x8" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://ct52bhcy2pxs7" path="res://scenes/shed_01.tscn" id="4_0eh0j"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
-[ext_resource type="PackedScene" uid="uid://cralbkilrt1ek" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
+[ext_resource type="PackedScene" uid="uid://dhj3y0pophuxt" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
 [ext_resource type="PackedScene" uid="uid://d1cft804uu4b0" path="res://scenes/shed_02.tscn" id="5_qidpy"]
 [ext_resource type="Script" uid="uid://dhbtk83rvo1x4" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
-[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
+[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="11_71hdk"]
 
