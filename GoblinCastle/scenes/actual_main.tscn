@@ -2,15 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://dh3b6vmk8ibc6" path="res://Buildings/Shed1.tscn" id="1_71hdk"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
-[ext_resource type="PackedScene" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
+[ext_resource type="PackedScene" uid="uid://boqjct1oyq8x8" path="res://scenes/world_env_og.tscn" id="1_l2ck8"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
-[ext_resource type="PackedScene" uid="uid://cralbkilrt1ek" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
+[ext_resource type="PackedScene" uid="uid://dhj3y0pophuxt" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
 [ext_resource type="Script" uid="uid://dhbtk83rvo1x4" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
 [ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
-[ext_resource type="PackedScene" path="res://Buildings/Shed2.tscn" id="10_0eh0j"]
+[ext_resource type="PackedScene" uid="uid://m7s62cndplgg" path="res://Buildings/Shed2.tscn" id="10_qidpy"]
 [ext_resource type="PackedScene" uid="uid://b1yyc8ml6sfc" path="res://church.tscn" id="11_0eh0j"]
-[ext_resource type="PackedScene" path="res://Buildings/Shed2_alt.tscn" id="11_qidpy"]
+[ext_resource type="PackedScene" path="res://Buildings/Shed2_alt.tscn" id="11_i60o2"]
 [ext_resource type="Texture2D" uid="uid://biaa47y4nk1h4" path="res://MichaelPNG/completedCabinMap.png" id="12_0eh0j"]
 [ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="13_qidpy"]
 
@@ -61,11 +61,11 @@ message = "Tip 3: Do not be afraid of Ghosts, you can just walk past them"
 
 [node name="CautionFireSign" parent="." unique_id=1549557981 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -62, 2, 103)
-message = "Caution: If you stand in bright fire for too long, you will burn up and die (don't worry, you will respawn)"
+message = "Caution: If you stand in flickering fire for too long, you will burn up and die (don't worry, you will respawn)"
 
 [node name="MageStaffSign" parent="." unique_id=2047244480 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -138, 2, -8)
-message = "It's not the heat that kills you, it is the glow"
+message = "Fear not the Frozen Fire"
 
 [node name="MageStaffSign2" parent="." unique_id=1512910518 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 28.048548, 6.447523, -4.522174)
@@ -74,14 +74,14 @@ message = "I, the great Goblin Mage, have hid my staff to prevent anyone to achi
 [node name="Church" parent="." unique_id=1197276794 instance=ExtResource("11_0eh0j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2252, 2.5227509, 20.000217)
 
-[node name="realShed" parent="." unique_id=342971424 instance=ExtResource("1_71hdk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136.87569, 3.0587006, -5.1754456)
+[node name="Shed1" parent="." unique_id=342971424 instance=ExtResource("1_71hdk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 132.94342, 2, -41.480713)
 
-[node name="Shed2" parent="." unique_id=597475210 instance=ExtResource("10_0eh0j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200.44733, 0, -6.5987854)
+[node name="Shed2" parent="." unique_id=597475210 instance=ExtResource("10_qidpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 215.51466, 0, -38.883972)
 
-[node name="Shed3" parent="." unique_id=1928421517 instance=ExtResource("11_qidpy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 126.19975, 0, 98.34862)
+[node name="Shed3" parent="." unique_id=736893193 instance=ExtResource("11_i60o2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.66924, 0, 65.22284)
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1918384987]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.726597, 7.255224, 74.974144)

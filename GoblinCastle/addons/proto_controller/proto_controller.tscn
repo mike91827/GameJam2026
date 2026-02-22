@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bgm4p8kb0ifua" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="Script" uid="uid://chlt3sja6e4lh" path="res://addons/proto_controller/head.gd" id="2_wr06p"]
+[ext_resource type="AudioStream" uid="uid://biotou42coiqi" path="res://assets/audio/sfx_treasures_on_altarl.wav" id="3_5hfox"]
 [ext_resource type="FontFile" uid="uid://b38wuv5pqoiml" path="res://addons/proto_controller/Final-Fantasy.ttf" id="3_6dqce"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
