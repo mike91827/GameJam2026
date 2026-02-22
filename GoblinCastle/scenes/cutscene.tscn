@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="14_tvcxb"]
 [ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="15_8qop0"]
 [ext_resource type="PackedScene" uid="uid://bktuvfa5c3dmg" path="res://wall.tscn" id="15_bcuqd"]
+[ext_resource type="Texture2D" uid="uid://dnx2n3dx5nop5" path="res://assets/sprites/sprite_dagger.png" id="17_er82a"]
+[ext_resource type="Texture2D" uid="uid://bmo55xg7nx1bv" path="res://assets/sprites/sprite_firestaff.png" id="18_40a5i"]
+[ext_resource type="Texture2D" uid="uid://c807rimwnlmn5" path="res://assets/sprites/sprite_shield.png" id="19_f3v4i"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ptll"]
 albedo_texture = ExtResource("2_2bm7f")
@@ -607,5 +610,28 @@ size = Vector3(1, 0.8334961, 1)
 
 [node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("15_8qop0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.17988)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1862385995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 5.6141624, -41.17988)
+
+[node name="Dagger" type="Sprite3D" parent="Node3D" unique_id=116553993]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 2.5, 0, -1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("17_er82a")
+
+[node name="Mage" type="Sprite3D" parent="Node3D" unique_id=1058889211]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("18_40a5i")
+
+[node name="Shield" type="Sprite3D" parent="Node3D" unique_id=45890239]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -2.5, 0, -1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("19_f3v4i")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1520431606]
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

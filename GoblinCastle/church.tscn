@@ -4,16 +4,17 @@
 [ext_resource type="PackedScene" uid="uid://gk4oouwisi40" path="res://Puzzle/PicturePuzzle/DragonPicture.tscn" id="2_ce1d6"]
 [ext_resource type="PackedScene" uid="uid://d1yrplf6a27ib" path="res://Puzzle/PicturePuzzle/GoblinSquattingPicture.tscn" id="2_rcu85"]
 [ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
-[ext_resource type="PackedScene" uid="uid://d2vwtip8a245s" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
+[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/MichaelPainting.tscn" id="3_m8tyq"]
 [ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
 [ext_resource type="PackedScene" uid="uid://dc5a7p0mtp1v1" path="res://Puzzle/PicturePuzzle/GhostPicture.tscn" id="5_xcmki"]
 [ext_resource type="PackedScene" uid="uid://bje3ik23qe8tv" path="res://Puzzle/PicturePuzzle/CrazedGoblinPicture.tscn" id="6_0t755"]
 [ext_resource type="PackedScene" uid="uid://bkjm1i2uusf8c" path="res://bench1.tscn" id="7_6f434"]
 [ext_resource type="PackedScene" uid="uid://doi6jh3657hw" path="res://Puzzle/Shield/Sheild.tscn" id="7_ubr35"]
 [ext_resource type="PackedScene" uid="uid://c4kftwt0rpvco" path="res://bench2.tscn" id="8_7u5lq"]
-[ext_resource type="PackedScene" path="res://wall.tscn" id="9_7u5lq"]
+[ext_resource type="PackedScene" uid="uid://bktuvfa5c3dmg" path="res://wall.tscn" id="9_7u5lq"]
 [ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="10_5se3q"]
-[ext_resource type="PackedScene" uid="uid://btwcaa581gtxn" path="res://Puzzle/PicturePuzzle/Dagger.tscn" id="11_33n2h"]
+[ext_resource type="PackedScene" path="res://Puzzle/PicturePuzzle/Dagger.tscn" id="11_33n2h"]
+[ext_resource type="PackedScene" uid="uid://b81e8wqoqyn5t" path="res://Puzzle/AlterPuzzle/TreasuresOnAlter.tscn" id="15_ul8ja"]
 
 [node name="Church" type="Node3D" unique_id=1197276794]
 
@@ -160,3 +161,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 3.3532343, -41.179
 
 [node name="Dagger" parent="." unique_id=166409536 instance=ExtResource("11_33n2h")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 20, 5, -43)
+
+[node name="TreasuresOnAlter" parent="." unique_id=661144689 instance=ExtResource("15_ul8ja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.512779, 5.20868, -41.17988)
