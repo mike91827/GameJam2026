@@ -73,4 +73,3 @@ font_size = 56
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1174766401]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29764986, 0)
-stream = ExtResource("3_5hfox")

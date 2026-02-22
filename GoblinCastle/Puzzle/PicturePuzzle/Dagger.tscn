@@ -23,4 +23,5 @@ shape = SubResource("BoxShape3D_frj7s")
 
 [node name="Sprite3D" type="Sprite3D" parent="Area3D" unique_id=2100406501 groups=["Dagger"]]
 billboard = 1
+texture_filter = 0
 texture = ExtResource("1_frj7s")

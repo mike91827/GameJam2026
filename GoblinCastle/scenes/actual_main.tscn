@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
 [ext_resource type="PackedScene" uid="uid://dhj3y0pophuxt" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
 [ext_resource type="Script" uid="uid://dhbtk83rvo1x4" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
-[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
+[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://m7s62cndplgg" path="res://Buildings/Shed2.tscn" id="10_qidpy"]
 [ext_resource type="PackedScene" uid="uid://b1yyc8ml6sfc" path="res://church.tscn" id="11_0eh0j"]
@@ -68,7 +68,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -138, 2, -8)
 message = "Fear not the Frozen Fire"
 
 [node name="MageStaffSign2" parent="." unique_id=1512910518 instance=ExtResource("7_l2ck8")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -71.19228, 2, 108.04228)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 28.048548, 6.447523, -4.522174)
 message = "I, the great Goblin Mage, have hid my staff to prevent anyone to achieve Goblin mode ever again. It will only be unlocked when someone embraces my non-dangerous flame"
 
 [node name="Church" parent="." unique_id=1197276794 instance=ExtResource("11_0eh0j")]
@@ -88,5 +88,17 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.726597, 7.255224, 74.
 texture = ExtResource("12_0eh0j")
 
 [node name="music" parent="." unique_id=1653993637 instance=ExtResource("13_qidpy")]
+
+[node name="Bounds" type="CSGCylinder3D" parent="." unique_id=378769749]
+transform = Transform3D(480.00003, 0, 0, 0, 220, 0, 0, 0, 400, 0, 95.8, 0)
+visible = false
+use_collision = true
+height = 1.5
+
+[node name="InnerBoundsErased" type="CSGCylinder3D" parent="Bounds" unique_id=1623432169]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+operation = 2
+use_collision = true
+height = 1.5
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplacePuzzle" method="_on_puzzle_manager_fireplace_puzzle_solved"]
