@@ -1,32 +1,45 @@
 [gd_scene format=3 uid="uid://cvcntrs6w0vc5"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="1_85g3d"]
 [ext_resource type="PackedScene" path="res://scenes/music.tscn" id="1_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://bxscmtygqovk" path="res://Puzzle/Shield/ChurchMap.tscn" id="1_jbj1t"]
+=======
+[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="1_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch.tscn" id="1_jbj1t"]
+>>>>>>> 09df3f5fb7b761f36ed5ed911ad503183d3aaa22
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cnfs2t28ub4tw" path="res://Characters/GoblinQueen/GoblinQueen.tscn" id="1_tipki"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://dijfdcdybnvky" path="res://assets/textures/AllSky_Night_MoonBurst Equirect.png" id="2_muem4"]
 [ext_resource type="PackedScene" uid="uid://c1r585mxa83js" path="res://Characters/ActualGoblin1.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="3_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://dj52y00r1k881" path="res://Pathfinding/StandardPathFinding.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://beq827823tgnq" path="res://MichaelPNG/fireplaceMap.png" id="7_o6xl0"]
-[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="10_choun"]
-[ext_resource type="Script" path="res://scripts/fireplace_treasures.gd" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="10_choun"]
+[ext_resource type="Script" uid="uid://bxukp5kd0q71q" path="res://scripts/fireplace_treasures.gd" id="11_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://dj4jigp8qyv6s" path="res://assets/Models/ChurchWhole.glb" id="12_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://ds3eelvgujrww" path="res://assets/Models/Shed01.glb" id="14_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://bfeie5ejbdoso" path="res://assets/Models/Shed02.glb" id="15_jbj1t"]
+[ext_resource type="PackedScene" uid="uid://dljbi0w22h02m" path="res://scenes/altar_spotlight.tscn" id="17_muem4"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_85g3d"]
-panorama = ExtResource("1_85g3d")
+panorama = ExtResource("2_muem4")
 
-[sub_resource type="Sky" id="Sky_85g3d"]
+[sub_resource type="Sky" id="Sky_jkv2x"]
 sky_material = SubResource("PanoramaSkyMaterial_85g3d")
 
 [sub_resource type="Environment" id="Environment_choun"]
 background_mode = 2
-sky = SubResource("Sky_85g3d")
+sky = SubResource("Sky_jkv2x")
 tonemap_mode = 2
+glow_enabled = true
+glow_levels/2 = 1.0
+glow_levels/3 = 1.0
+glow_levels/4 = 0.5
+glow_levels/5 = 0.2
+glow_hdr_threshold = 0.8
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wfyh"]
 albedo_texture = ExtResource("1_o5qli")
@@ -49,14 +62,14 @@ transform = Transform3D(0.8480481, 0.2585262, -0.46257824, 0, -0.8729221, -0.487
 
 [node name="music" parent="." unique_id=1653993637 instance=ExtResource("1_eb6dy")]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=673844899]
+environment = SubResource("Environment_choun")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1687101378]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, -0.056568146, 350.18005, 440.09955)
 light_color = Color(0.6888, 0.73415995, 0.84, 1)
 shadow_enabled = true
 directional_shadow_max_distance = 1.0
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=673844899]
-environment = SubResource("Environment_choun")
 
 [node name="GoblinQueen" parent="." unique_id=971588030 instance=ExtResource("1_tipki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.126832, 4.894755, 0)
@@ -123,6 +136,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.12708, 2.828682, -54.0208
 
 [node name="Shed022" parent="." unique_id=1695617665 instance=ExtResource("15_jbj1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.36785, 2.399887, -52.052864)
+
+[node name="Torch" parent="." unique_id=1983870350 instance=ExtResource("1_jbj1t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 10, -167)
+
+[node name="altar_spotlight" parent="." unique_id=2129358276 instance=ExtResource("17_muem4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 61, 7)
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplaceTreasures" method="_on_puzzle_manager_fireplace_puzzle_solved"]
 
