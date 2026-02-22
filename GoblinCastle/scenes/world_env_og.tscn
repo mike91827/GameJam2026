@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://boqjct1oyq8x8"]
+
+[ext_resource type="Texture2D" uid="uid://dijfdcdybnvky" path="res://assets/textures/AllSky_Night_MoonBurst Equirect.png" id="1_62obn"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_85g3d"]
+panorama = ExtResource("1_62obn")
+
+[sub_resource type="Sky" id="Sky_jkv2x"]
+sky_material = SubResource("PanoramaSkyMaterial_85g3d")
+
+[sub_resource type="Environment" id="Environment_choun"]
+background_mode = 2
+sky = SubResource("Sky_jkv2x")
+tonemap_mode = 2
+glow_enabled = true
+glow_levels/2 = 1.0
+glow_levels/3 = 1.0
+glow_levels/4 = 0.5
+glow_levels/5 = 0.2
+glow_hdr_threshold = 0.8
+
+[node name="WorldEnvironment" type="WorldEnvironment" unique_id=1540655448]
+environment = SubResource("Environment_choun")

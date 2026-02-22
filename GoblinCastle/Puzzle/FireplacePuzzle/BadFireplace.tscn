@@ -10,6 +10,7 @@ size = Vector3(2.5885315, 1.5908737, 1.1520996)
 script = ExtResource("1_fvojy")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1069590788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 light_color = Color(0.99215686, 0.8862745, 0.6862745, 1)
 light_size = 0.05
 omni_range = 50.0
