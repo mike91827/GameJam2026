@@ -1,26 +1,53 @@
-[gd_scene format=3 uid="uid://cralbkilrt1ek"]
+[gd_scene format=3 uid="uid://dhj3y0pophuxt"]
 
 [ext_resource type="PackedScene" uid="uid://be01yeaygobba" path="res://Puzzle/FireplacePuzzle/GoodFireplace.tscn" id="1_juel5"]
 [ext_resource type="PackedScene" uid="uid://dvwxtdmn2v44a" path="res://Puzzle/FireplacePuzzle/BadFireplace.tscn" id="2_8s0m4"]
-[ext_resource type="PackedScene" uid="uid://jlxdbvr1dvst" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="3_8s0m4"]
+[ext_resource type="PackedScene" uid="uid://dwio36efih3q1" path="res://Puzzle/FireplacePuzzle/fire_staff.tscn" id="3_8s0m4"]
 
-[node name="FireplacePuzzle" type="Node3D"]
+[node name="FireplacePuzzle" type="Node3D" unique_id=1202501209]
 
-[node name="GoodFireplace" parent="." instance=ExtResource("1_juel5")]
+[node name="GoodFireplace" parent="." unique_id=192742837 instance=ExtResource("1_juel5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2143478, 0, -3.4440136)
 
-[node name="BadFireplace" parent="." instance=ExtResource("2_8s0m4")]
+[node name="BadFireplace" parent="." unique_id=1757236868 instance=ExtResource("2_8s0m4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.775055, 0, -1.3138562)
 
-[node name="BadFireplace2" parent="." instance=ExtResource("2_8s0m4")]
+[node name="BadFireplace2" parent="." unique_id=1334324314 instance=ExtResource("2_8s0m4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4374557, 0, -4.575329)
 
-[node name="BadFireplace3" parent="." instance=ExtResource("2_8s0m4")]
+[node name="BadFireplace3" parent="." unique_id=1386241130 instance=ExtResource("2_8s0m4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8038235, 0, 0.90257955)
 
-[node name="BadFireplace4" parent="." instance=ExtResource("2_8s0m4")]
+[node name="BadFireplace4" parent="." unique_id=1397973770 instance=ExtResource("2_8s0m4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.52396, 0, 2.9766223)
 
-[node name="FireStaff" parent="." instance=ExtResource("3_8s0m4")]
+[node name="FireStaff" parent="." unique_id=797848194 instance=ExtResource("3_8s0m4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.13092291, 0)
 visible = false
+
+[node name="BadFireplace5" parent="." unique_id=795615243 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52396, 0, -2.0233777)
+
+[node name="BadFireplace6" parent="." unique_id=902530140 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5239601, 0, 3.9766223)
+
+[node name="BadFireplace7" parent="." unique_id=1379572277 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.52396, 0, -1.0233777)
+
+[node name="BadFireplace8" parent="." unique_id=1744189907 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.47604, 0, -1.0233777)
+
+[node name="BadFireplace9" parent="." unique_id=346406425 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.47604, 0, 0.97662234)
+
+[node name="BadFireplace10" parent="." unique_id=2029354927 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4760399, 0, 2.9766223)
+
+[node name="BadFireplace11" parent="." unique_id=1211546810 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5239601, 0, -4.0233774)
+
+[node name="BadFireplace12" parent="." unique_id=2057998566 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52396, 0, 0.97662234)
+
+[node name="BadFireplace13" parent="." unique_id=243823964 instance=ExtResource("2_8s0m4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.47604, 0, -3.0233777)

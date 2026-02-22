@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://c6ebgeqcbt7to" path="res://Puzzle/FireplacePuzzle/good_fireplace.gd" id="1_72wl0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_72wl0"]
-size = Vector3(2.5885315, 1.5908737, 1.1520996)
+size = Vector3(1.2911568, 1.5908737, 1.1520996)
 
 [node name="GoodFireplace" type="Node3D" unique_id=2146114955]
 script = ExtResource("1_72wl0")
@@ -28,7 +28,7 @@ omni_attenuation = 1.5
 [node name="Area3D" type="Area3D" parent="." unique_id=2090391352]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=113510306]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.078181565, 0.47826302, -0.054016262)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02575177, 0.47826302, -0.054016262)
 shape = SubResource("BoxShape3D_72wl0")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b05r5baehd183" path="res://Puzzle/FireplacePuzzle/bad_fireplace.gd" id="1_fvojy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1ag43"]
-size = Vector3(2.5885315, 1.5908737, 1.1520996)
+size = Vector3(1.1717911, 1.5908737, 0.99487305)
 
 [node name="BadFireplace" type="Node3D" unique_id=795615243]
 script = ExtResource("1_fvojy")
@@ -28,7 +28,7 @@ frame = 5
 [node name="Area3D" type="Area3D" parent="." unique_id=466750923]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=687970914]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.078181565, 0.51247627, -0.054016262)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.062110245, 0.51247627, -0.13262954)
 shape = SubResource("BoxShape3D_1ag43")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
