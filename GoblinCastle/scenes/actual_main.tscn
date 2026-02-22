@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
 [ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 [ext_resource type="PackedScene" uid="uid://b1yyc8ml6sfc" path="res://church.tscn" id="11_0eh0j"]
+[ext_resource type="Texture2D" uid="uid://biaa47y4nk1h4" path="res://MichaelPNG/completedCabinMap.png" id="12_0eh0j"]
+[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="13_qidpy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0eh0j"]
 albedo_texture = ExtResource("5_dhkuc")
@@ -86,5 +88,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2252, 2.5227509, 20.000217
 
 [node name="Shed1" parent="." unique_id=342971424 instance=ExtResource("1_71hdk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 2, 105)
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1918384987]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.726597, 7.255224, 74.974144)
+texture = ExtResource("12_0eh0j")
+
+[node name="music" parent="." unique_id=1653993637 instance=ExtResource("13_qidpy")]
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplacePuzzle" method="_on_puzzle_manager_fireplace_puzzle_solved"]
