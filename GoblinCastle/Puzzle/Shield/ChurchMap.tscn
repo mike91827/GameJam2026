@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://bxscmtygqovk"]
 
-[ext_resource type="Texture2D" uid="uid://beq827823tgnq" path="res://MichaelPNG/fireplaceMap.png" id="1_7a4tu"]
+[ext_resource type="Texture2D" uid="uid://pb6v2v45jn3n" path="res://MichaelPNG/churchMap.png" id="1_7a4tu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wkjcm"]
-size = Vector3(4.857483, 3.5804443, 0.41479492)
+size = Vector3(0.39398193, 0.347229, 0.23596191)
 
 [node name="ChurchMap" type="Node3D" unique_id=215581483]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1277107339 groups=["Pickable"]]
 
 [node name="Sprite3D" type="Sprite3D" parent="Area3D" unique_id=1362938160]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+transform = Transform3D(0.2, 0, 0, 0, 1, 0, 0, 0, 0.2, 0, 0, 0)
 texture = ExtResource("1_7a4tu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1694616879 groups=["Pickable"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.045806885, 0.14666748, 0.07116699)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06954956, 0.05831909, 0.3319702)
 shape = SubResource("BoxShape3D_wkjcm")

@@ -2,40 +2,40 @@
 
 [ext_resource type="PackedScene" uid="uid://ct52bhcy2pxs7" path="res://scenes/shed_01.tscn" id="1_fmgqn"]
 [ext_resource type="PackedScene" uid="uid://bxscmtygqovk" path="res://Puzzle/Shield/ChurchMap.tscn" id="2_5wryh"]
-[ext_resource type="PackedScene" uid="uid://bqdtruhm1s4dp" path="res://assets/Models/Table01.glb" id="2_j2r8a"]
-[ext_resource type="PackedScene" uid="uid://brdep7myfurn" path="res://assets/Models/Table02.glb" id="2_uoxuw"]
-[ext_resource type="PackedScene" uid="uid://cfpw14ciuudje" path="res://assets/Models/Chair01.glb" id="4_5wryh"]
+[ext_resource type="PackedScene" path="res://scenes/table_round.tscn" id="2_rn0hy"]
+[ext_resource type="PackedScene" path="res://scenes/table_rectangle.tscn" id="3_rn0hy"]
+[ext_resource type="PackedScene" path="res://scenes/chair.tscn" id="7_ukrcj"]
 
 [node name="Shed1" type="Node3D" unique_id=342971424]
 
-[node name="Shed012" parent="." unique_id=198869785 instance=ExtResource("1_fmgqn")]
+[node name="Shed013" parent="." unique_id=198869785 instance=ExtResource("1_fmgqn")]
 
-[node name="ChurchMap" parent="Shed012" unique_id=215581483 instance=ExtResource("2_5wryh")]
-transform = Transform3D(0.25, 0, 0, 0, 0.22873992, -0.10088633, 0, 0.10088633, 0.22873992, -0.29305053, 2.7474627, -3.6594906)
+[node name="RoundTable" parent="Shed013" unique_id=668304053 instance=ExtResource("2_rn0hy")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -12, 2.5, 12)
 
-[node name="Table022" parent="Shed012" unique_id=1347611389 instance=ExtResource("2_uoxuw")]
-transform = Transform3D(0.75011104, 0, -0.9919678, 0, 1, 0, 0.66131186, 0, 1.1251665, -9, 2.5, -2)
+[node name="RectTable" parent="Shed013" unique_id=732129867 instance=ExtResource("3_rn0hy")]
+transform = Transform3D(0.7547096, 0, -0.98408854, 0, 1, 0, 0.656059, 0, 1.1320643, -11, 2, -2)
 
-[node name="Table012" parent="Shed012" unique_id=558221355 instance=ExtResource("2_j2r8a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2.5, 13)
+[node name="ChurchMap2" parent="Shed013" unique_id=983757360 instance=ExtResource("2_5wryh")]
+transform = Transform3D(0.12533323, -0.94774574, -0.29337627, 0, -0.295708, 0.9552784, -0.9921147, -0.11972813, -0.03706204, 8.70613, 2.7285035, -1.9642882)
 
-[node name="Chair012" parent="Shed012" unique_id=1402521827 instance=ExtResource("4_5wryh")]
+[node name="HardChair" parent="Shed013" unique_id=1940621086 instance=ExtResource("7_ukrcj")]
 transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 0, 3.25, -5)
 
-[node name="Chair013" parent="Shed012" unique_id=1001075320 instance=ExtResource("4_5wryh")]
+[node name="HardChair2" parent="Shed013" unique_id=858275786 instance=ExtResource("7_ukrcj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, -5)
 
-[node name="Chair014" parent="Shed012" unique_id=303816448 instance=ExtResource("4_5wryh")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 2.5, -3)
+[node name="HardChair3" parent="Shed013" unique_id=1475755522 instance=ExtResource("7_ukrcj")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 2.5, -3)
 
-[node name="Table023" parent="Shed012" unique_id=1494738798 instance=ExtResource("2_uoxuw")]
-transform = Transform3D(-2.827208e-08, -0.6467898, 0.7626684, 1, -4.371139e-08, 0, 3.3337294e-08, 0.7626684, 0.6467898, 7.5212526, 4.2, -3.7808783)
+[node name="Table022" parent="Shed013" unique_id=1604794116 instance=ExtResource("3_rn0hy")]
+transform = Transform3D(-2.827208e-08, -0.6467898, 0.7626684, 1, -4.371139e-08, 0, 3.3337294e-08, 0.7626684, 0.6467898, 7.521, 4.2, -3.871)
 
-[node name="Chair015" parent="Shed012" unique_id=128411109 instance=ExtResource("4_5wryh")]
-transform = Transform3D(0.35999694, -0.9329535, -4.371139e-08, -1.5735965e-08, 4.078069e-08, -1, 0.9329535, 0.35999694, 1.9106855e-15, 10.571626, 3.25, -2.6482673)
+[node name="HardChair4" parent="Shed013" unique_id=471432649 instance=ExtResource("7_ukrcj")]
+transform = Transform3D(0.35999686, -0.93295354, 4.0780694e-08, 0, -4.371139e-08, -1, 0.93295354, 0.35999686, -1.5735962e-08, 10.572, 3.25, -2.648)
 
-[node name="ChurchMap2" parent="Shed012" unique_id=983757360 instance=ExtResource("2_5wryh")]
-transform = Transform3D(0.03133331, 0.10009082, 0.22693624, 0, 0.22873992, -0.10088633, -0.24802868, 0.01264441, 0.028668713, 9.70613, 2.7285035, -1.9642882)
+[node name="Rectangle Table" parent="Shed013" unique_id=1699214360 instance=ExtResource("3_rn0hy")]
+transform = Transform3D(2.6911417e-08, 0.4617461, -0.7880108, 1, -3.278354e-08, 0, -3.4445044e-08, -0.59100807, -0.61566144, 9.066, 4.2, -3.871)
 
-[node name="Table024" parent="Shed012" unique_id=2132823493 instance=ExtResource("2_uoxuw")]
-transform = Transform3D(2.6911417e-08, 0.4617461, -0.7880108, 1, -3.278354e-08, 0, -3.4445044e-08, -0.59100807, -0.61566144, 9.065715, 4.2, -3.7808783)
+[node name="HardChair5" parent="Shed013" unique_id=421147243 instance=ExtResource("7_ukrcj")]
+transform = Transform3D(-0.8737722, -0.48609543, 0.01527615, 0, 0.031410728, 0.99950653, -0.48633543, 0.873341, -0.027445821, 8, 3.2092276, -4.6364937)
