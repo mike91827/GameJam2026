@@ -20,7 +20,7 @@ uv1_scale = Vector3(10, 10, 10)
 [node name="WorldEnvironment2" parent="." unique_id=1540655448 instance=ExtResource("1_l2ck8")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=137006881]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 350, 440)
+transform = Transform3D(0.9848077, 0.15038374, -0.08682408, 0, 0.49999997, 0.86602545, 0.17364818, -0.85286856, 0.49240384, 0, 350, 440)
 light_color = Color(0.6888, 0.73415995, 0.84, 1)
 shadow_enabled = true
 directional_shadow_max_distance = 1.0
