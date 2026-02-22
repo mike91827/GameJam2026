@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://db6gjo8qjtpp4"]
+
+[ext_resource type="Texture2D" uid="uid://c8fy2litb1xks" path="res://assets/sprites/sprite_torch.png" id="1_hbdl4"]
+[ext_resource type="Texture2D" uid="uid://dh24ck8n75o5r" path="res://assets/sprites/sprite_torch_green.png" id="2_dw1iy"]
+
+[node name="Torch_L" type="Node3D" unique_id=1983870350]
+
+[node name="LightRed" type="OmniLight3D" parent="." unique_id=549489137]
+light_color = Color(0.99, 0.52800006, 0, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="RedTorch" type="Sprite3D" parent="." unique_id=1295658301]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+texture_filter = 0
+texture = ExtResource("1_hbdl4")
+
+[node name="LightGreen" type="OmniLight3D" parent="." unique_id=2066247321]
+visible = false
+light_color = Color(0, 0.99, 0.09899991, 1)
+light_energy = 250.0
+omni_range = 500.0
+omni_attenuation = 2.0
+
+[node name="GreenTorch" type="Sprite3D" parent="." unique_id=1567270615]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+visible = false
+texture_filter = 0
+texture = ExtResource("2_dw1iy")

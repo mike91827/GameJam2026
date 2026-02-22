@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh24ck8n75o5r"
-path="res://.godot/imported/sprite_torch_green.png-535a50b0a3f868430a878c391cd9f38a.ctex"
+uid="uid://b7w8qpsnrvmcc"
+path.s3tc="res://.godot/imported/MichaelPainting.png-2ae03b633ad827bd31d13d4549d89c89.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://assets/sprites/sprite_torch_green.png"
-dest_files=["res://.godot/imported/sprite_torch_green.png-535a50b0a3f868430a878c391cd9f38a.ctex"]
+source_file="res://MichaelPNG/MichaelPainting.png"
+dest_files=["res://.godot/imported/MichaelPainting.png-2ae03b633ad827bd31d13d4549d89c89.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

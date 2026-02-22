@@ -1,13 +1,8 @@
 [gd_scene format=3 uid="uid://cvcntrs6w0vc5"]
 
-<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="1_85g3d"]
 [ext_resource type="PackedScene" path="res://scenes/music.tscn" id="1_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://bxscmtygqovk" path="res://Puzzle/Shield/ChurchMap.tscn" id="1_jbj1t"]
-=======
-[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="1_eb6dy"]
-[ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch.tscn" id="1_jbj1t"]
->>>>>>> 09df3f5fb7b761f36ed5ed911ad503183d3aaa22
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cnfs2t28ub4tw" path="res://Characters/GoblinQueen/GoblinQueen.tscn" id="1_tipki"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0wfyh"]
