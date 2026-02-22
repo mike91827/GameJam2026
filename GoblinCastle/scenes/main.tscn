@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cvcntrs6w0vc5"]
 
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="1_85g3d"]
-[ext_resource type="PackedScene" uid="uid://dehaw1vvbyn0l" path="res://scenes/music.tscn" id="1_eb6dy"]
+[ext_resource type="PackedScene" path="res://scenes/music.tscn" id="1_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://bxscmtygqovk" path="res://Puzzle/Shield/ChurchMap.tscn" id="1_jbj1t"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cnfs2t28ub4tw" path="res://Characters/GoblinQueen/GoblinQueen.tscn" id="1_tipki"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_0wfyh"]
@@ -42,6 +43,9 @@ _data = {
 point_count = 10
 
 [node name="Main" type="Node3D" unique_id=1551329216]
+
+[node name="ChurchMap" parent="." unique_id=215581483 instance=ExtResource("1_jbj1t")]
+transform = Transform3D(0.8480481, 0.2585262, -0.46257824, 0, -0.8729221, -0.4878596, -0.52991927, 0.41372842, -0.7402799, 0, 4.726534, 17.783615)
 
 [node name="music" parent="." unique_id=1653993637 instance=ExtResource("1_eb6dy")]
 
@@ -91,6 +95,9 @@ transform = Transform3D(-0.43709993, 0.07706232, -0.89610356, 0, 0.9963215, 0.08
 [node name="ActualGoblin1" parent="Path3D/StandardPathFinding" unique_id=1702466797 instance=ExtResource("3_sugp2")]
 transform = Transform3D(-0.43710342, -7.2637203e-09, 0.89941597, 0.0770625, 0.9963243, 0.037451327, -0.89610577, 0.08568104, -0.435495, 3.1289313, 0.112614155, -1.4558277)
 
+[node name="Goblin1" parent="Path3D/StandardPathFinding/ActualGoblin1/RigidBody3D" parent_id_path=PackedInt32Array(1702466797, 312172092) index="1" unique_id=114918587]
+billboard = 0
+
 [node name="GoodFireplace" parent="." unique_id=27235167 instance=ExtResource("6_tefeu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.06518, 2.8839493, 0)
 
@@ -118,3 +125,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.12708, 2.828682, -54.0208
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.36785, 2.399887, -52.052864)
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplaceTreasures" method="_on_puzzle_manager_fireplace_puzzle_solved"]
+
+[editable path="Path3D/StandardPathFinding/ActualGoblin1"]

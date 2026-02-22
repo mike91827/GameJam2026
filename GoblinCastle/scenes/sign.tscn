@@ -1,18 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2ptnd2b6hh66"]
+[gd_scene format=3 uid="uid://dv5612gugvitj"]
 
-[ext_resource type="Script" uid="uid://0h32el2xe0bf" path="res://scenes/sign.gd" id="1_kd50q"]
+[ext_resource type="Script" path="res://scenes/sign.gd" id="1_kd50q"]
 [ext_resource type="Texture2D" uid="uid://c5ovpv6b12ejy" path="res://assets/sprites/sprite_sign.png" id="1_shbub"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_shbub"]
+size = Vector3(2.1026, 0.80810547, 2.027588)
 
-[node name="Area3D" type="Area3D"]
+[node name="Area3D" type="Area3D" unique_id=1064519625]
 script = ExtResource("1_kd50q")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4156357, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1944061569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023040771, 0.511583, -0.05114746)
 shape = SubResource("BoxShape3D_shbub")
 
-[node name="Sign" type="Sprite3D" parent="."]
+[node name="Sign" type="Sprite3D" parent="." unique_id=806493977]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 billboard = 1
 texture_filter = 0

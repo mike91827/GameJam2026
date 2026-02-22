@@ -1,12 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://dreo2nv47ka8d"]
+[gd_scene format=3 uid="uid://b1ms5j72d25m2"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_il6em"]
 [ext_resource type="Texture2D" uid="uid://5de1cgiiiwcm" path="res://assets/textures/_0005_AllSkyFree_Screen_05.jpg" id="4_btng2"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="5_dhkuc"]
-[ext_resource type="PackedScene" uid="uid://cralbkilrt1ek" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
-[ext_resource type="Script" uid="uid://dhbtk83rvo1x4" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
-[ext_resource type="PackedScene" uid="uid://dhst4bb5rgmjr" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
-[ext_resource type="PackedScene" uid="uid://b2ptnd2b6hh66" path="res://scenes/sign.tscn" id="7_l2ck8"]
+[ext_resource type="PackedScene" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.tscn" id="5_il6em"]
+[ext_resource type="Script" path="res://Puzzle/FireplacePuzzle/fireplace_puzzle.gd" id="6_l2ck8"]
+[ext_resource type="PackedScene" path="res://scenes/puzzle_manager.tscn" id="6_tmja3"]
+[ext_resource type="PackedScene" uid="uid://dv5612gugvitj" path="res://scenes/sign.tscn" id="7_l2ck8"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_g72jx"]
 panorama = ExtResource("4_btng2")
@@ -23,37 +23,57 @@ tonemap_mode = 2
 albedo_texture = ExtResource("5_dhkuc")
 uv1_scale = Vector3(5, 5, 5)
 
-[node name="actual_main" type="Node3D"]
+[node name="actual_main" type="Node3D" unique_id=942228173]
 
-[node name="ProtoController" parent="." node_paths=PackedStringArray("puzzle_manager") instance=ExtResource("1_il6em")]
+[node name="ProtoController" parent="." unique_id=364462604 node_paths=PackedStringArray("puzzle_manager") instance=ExtResource("1_il6em")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2384696, 0)
 base_speed = 21.0
 puzzle_manager = NodePath("../PuzzleManager")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=137006881]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 350, 440)
 light_color = Color(0.6888, 0.73415995, 0.84, 1)
 shadow_enabled = true
 directional_shadow_max_distance = 1.0
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1495665930]
 environment = SubResource("Environment_71hdk")
 
-[node name="Floor" type="CSGBox3D" parent="."]
+[node name="Floor" type="CSGBox3D" parent="." unique_id=455772812]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00571, 0, -0.499146)
 use_collision = true
 size = Vector3(1000, 2, 1000)
 material = SubResource("StandardMaterial3D_0eh0j")
 
-[node name="FireplacePuzzle" parent="." instance=ExtResource("5_il6em")]
+[node name="FireplacePuzzle" parent="." unique_id=182993604 instance=ExtResource("5_il6em")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -57.61795, 3.7245064, -4.3816605)
 script = ExtResource("6_l2ck8")
 
-[node name="PuzzleManager" parent="." instance=ExtResource("6_tmja3")]
+[node name="PuzzleManager" parent="." unique_id=303137910 instance=ExtResource("6_tmja3")]
 temp_field = 69
 
-[node name="Area3D" parent="." instance=ExtResource("7_l2ck8")]
+[node name="Area3D" parent="." unique_id=550274553 instance=ExtResource("7_l2ck8")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.7230959, 1.8948388, -16.4203)
 message = "BAZINGA"
+
+[node name="SignTip1" parent="." unique_id=26792815 instance=ExtResource("7_l2ck8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 2, -34)
+message = "Tip 1: Collect all 3 goblin treasures and bring them to the altar in the church"
+
+[node name="SignTip2" parent="." unique_id=1064519625 instance=ExtResource("7_l2ck8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4, 2, -39)
+message = "Tip 2: If holding an object, press \"R\" to drop it"
+
+[node name="SignTip3" parent="." unique_id=1799768367 instance=ExtResource("7_l2ck8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 2, -45)
+message = "Tip 3: Do not be afraid of ghosts, you can just walk past them"
+
+[node name="CautionFireSign" parent="." unique_id=1549557981 instance=ExtResource("7_l2ck8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6, 2, -45)
+message = "Caution: If you stand in bright fire for too long, you will burn up and be sent to your doom"
+
+[node name="MageStaffSign" parent="." unique_id=2047244480 instance=ExtResource("7_l2ck8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 13, 2, -25)
+message = "One of them lies and gives you a prize, the rest will burn you up and send you to your doom."
 
 [connection signal="fireplace_puzzle_solved" from="PuzzleManager" to="FireplacePuzzle" method="_on_puzzle_manager_fireplace_puzzle_solved"]

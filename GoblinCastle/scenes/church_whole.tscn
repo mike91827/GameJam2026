@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://nqef17olugd3"]
+[gd_scene format=3 uid="uid://nqef17olugd3"]
 
 [ext_resource type="PackedScene" uid="uid://dj4jigp8qyv6s" path="res://assets/Models/ChurchWhole.glb" id="1_0vg5q"]
 [ext_resource type="Texture2D" uid="uid://bhu6x18cxhnam" path="res://assets/textures/Grass_20-256x256.png" id="2_xrk5n"]
