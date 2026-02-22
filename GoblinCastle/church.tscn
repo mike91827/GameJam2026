@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b1yyc8ml6sfc"]
+
+[ext_resource type="PackedScene" uid="uid://b3gs7pr364ah8" path="res://scenes/church_whole_2.tscn" id="1_1kxs5"]
+[ext_resource type="PackedScene" uid="uid://db6gjo8qjtpp4" path="res://scenes/Torch_L.tscn" id="2_yyuqe"]
+[ext_resource type="PackedScene" uid="uid://bthphqo8aexlr" path="res://scenes/Torch_R.tscn" id="3_qx4ao"]
+
+[node name="Church" type="Node3D" unique_id=1197276794]
+
+[node name="ChurchWhole2" parent="." unique_id=1684750864 instance=ExtResource("1_1kxs5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.55581, 7.6293945e-06, 133.94702)
+
+[node name="Torches" type="Node3D" parent="." unique_id=1130759126]
+
+[node name="Torch" parent="Torches" unique_id=1983870350 instance=ExtResource("2_yyuqe")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, -4.3467636)
+
+[node name="Torch2" parent="Torches" unique_id=15023519 instance=ExtResource("2_yyuqe")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, 31.868168)
+
+[node name="Torch3" parent="Torches" unique_id=1561273560 instance=ExtResource("2_yyuqe")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -37.089993, 47.313553, -39.535603)
+
+[node name="Torch_R" parent="Torches" unique_id=1038098737 instance=ExtResource("3_qx4ao")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -39.535603)
+
+[node name="Torch_R2" parent="Torches" unique_id=1207930841 instance=ExtResource("3_qx4ao")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, -4.2183)
+
+[node name="Torch_R3" parent="Torches" unique_id=751916383 instance=ExtResource("3_qx4ao")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 28.64019, 47.313553, 32.879036)
