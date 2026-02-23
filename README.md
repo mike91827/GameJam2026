@@ -1,5 +1,8 @@
-# Peg Jam 2026 - Goblin Castle Game
-Godot project and shared public info for our Peg Jam 2026  - Goblin Castle game. 2026-02-20
+# Peg Jam 2026
+
+## The Three Secret Treasures of Goblina
+Godot project and shared public info for our Peg Jam 2026  - Goblin Castle game. 2026-02-20 to 22  
+Play the game here: [https://eldritchrenaissancecake.itch.io/the-three-secret-treasures-of-goblina](https://eldritchrenaissancecake.itch.io/the-three-secret-treasures-of-goblina)
 
 ## Repo Structure
 
